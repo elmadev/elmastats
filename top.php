@@ -102,6 +102,53 @@
     }
   }
 
+  //update user if changed in adm.php
+  if (endsWith($_SERVER["PHP_SELF"], "adm.php")) {
+    if (sizeof($_POST) > 0 && ($_SESSION["nick"] === "Labs" || $_SESSION["nick"] === "Kopaka")) {
+      $adm_acc_status .= "<br/>";
+      $error = false;
+      if ($_POST["pwd"] != $_POST["pwd2"] && $_POST["pwd"] != "") {
+        $adm_acc_status .= "<span style=\"color: #FF0000\">Passwords don't match</span><br/>";
+        $error = true;
+      } elseif(strlen($_POST["pwd"]) < 3 && $_POST["pwd"] != "") {
+        $adm_acc_status .= "<span style=\"color: #FF0000\">Password must be at least 3 chars</span><br/>";
+        $error = true;
+      } elseif(strlen($_POST["pwd"]) > 30 && $_POST["pwd"] != "") {
+        $adm_acc_status .= "<span style=\"color: #FF0000\">Password can't be longer than 30 chars</span><br/>";
+        $error = true;
+      }
+      if (strlen($_POST["team"]) > 12 && $_POST["team"] != "") {
+        $adm_acc_status .= "<span style=\"color: #FF0000\">Team name can't be longer than 12 chars</span><br/>";
+        $error = true;
+      }
+      if ($error == false) {
+        $fh = fopen("usersz/" . $_POST["OGnick"], "w");
+        //fwrite($fh, $_POST["nick"]. "\n");
+        fwrite($fh, $_POST["OGnick"] . "\n");
+        fwrite($fh, $_POST["elmaname"] . "\n");
+        if ($_POST["country"] != "NULL") {
+          fwrite($fh, strtolower($_POST["country"]) . "\n");
+        } else {
+          fwrite($fh, strtolower($users[$_POST["OGnick"]]["country"]) . "\n");
+        }
+        fwrite($fh, $_POST["team"] . "\n");
+        if ($_POST["pwd"] != "") {
+          fwrite($fh, strtolower(md5(md5($_POST["pwd"]))) . "\n");
+        } else {
+          fwrite($fh, strtolower($users[$_POST["OGnick"]]["pwd"]) . "\n");
+        }
+        fwrite($fh, $users[$_POST["OGnick"]]["registered"] . "\n");
+        fwrite($fh, $_POST["email"] . "\n");
+        fwrite($fh, $_POST["theme"] . "\n");
+        fwrite($fh, $_POST["timezone"] . "\n");
+        fwrite($fh, $_POST["timeformat"] . "\n");
+        fclose($fh);
+        $users[$_POST["OGnick"]] = loadUser($_POST["OGnick"]);
+        $adm_acc_status .= "<span style=\"color: #00CC00\">User updated!</span><br/>";
+      }
+    }
+  }
+
   //Load intnames
   $intnames = array();
   $lines = file("intnames.txt");

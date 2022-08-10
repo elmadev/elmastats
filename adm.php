@@ -1,18 +1,22 @@
 <?php include("top.php"); ?>
 <?php
-  if (isset($_SESSION["nick"])) {
+  if ($_SESSION["nick"] === "Labs" || $_SESSION["nick"] === "Kopaka") {
+    $admnick = $_GET["nick"];
+    $admnuser = $users[$admnick];
+    if (isset($admnick) && isset($admnuser)) {
 ?>
 <div class="lefty">
-<b>Account settings</b><br/><br/>
-<form enctype="multipart/form-data" action="<?php echo $_SERVER["PHP_SELF"]; ?>" method="post" autocomplete="off">
+<b>Admin - Account settings: <?php echo $admnick; ?></b><br/><br/>
+<form enctype="multipart/form-data" action="<?php echo($_SERVER["PHP_SELF"]); ?>?nick=<?php echo($admnick); ?>" method="post" autocomplete="off">
+  <input type="hidden" name="OGnick" value="<?php echo($admnick); ?>" />
   <table border="0" cellpadding="0" cellspacing="2">
     <tr>
       <td>Nick:&nbsp;</td> 
-      <td><input type="text" name="nick" style="width: 170px" value="<?php echo($_SESSION["nick"]); ?>" disabled="disabled"/></td>
+      <td><input type="text" name="nick" style="width: 170px" value="<?php echo($admnick); ?>" disabled="disabled"/></td>
     </tr>
     <tr>
       <td>State.dat name:&nbsp;</td>
-      <td><input type="text" name="elmaname" style="width: 170px" value="<?php echo($users[$_SESSION["nick"]]["elmaname"]); ?>"/></td>
+      <td><input type="text" name="elmaname" style="width: 170px" value="<?php echo($admnuser["elmaname"]); ?>"/></td>
     </tr>
     <tr>
       <td>Pwd:&nbsp;</td> 
@@ -28,11 +32,11 @@
     </tr>
     <tr>
       <td>Team:&nbsp;</td>
-      <td><input type="text" name="team" style="width: 170px" value="<?php echo($users[$_SESSION["nick"]]["team"]); ?>"/></td>
+      <td><input type="text" name="team" style="width: 170px" value="<?php echo($admnuser["team"]); ?>"/></td>
     </tr>
     <tr>
       <td>Email address:&nbsp;</td>
-      <td><input type="text" name="email" style="width: 170px" value="<?php echo($users[$_SESSION["nick"]]["email"]); ?>"/></td>
+      <td><input type="text" name="email" style="width: 170px" value="<?php echo($admnuser["email"]); ?>"/></td>
     </tr>
     <tr>
       <td>Site theme:&nbsp;</td>
@@ -41,7 +45,7 @@
         $themes = array("Default", "Klassik", "Mopo");
         foreach ($themes as $theme) {
           $sel = "";
-          if ($users[$_SESSION["nick"]]["theme"] == $theme) $sel = " selected=\"selected\"";
+          if ($admnuser["theme"] == $theme) $sel = " selected=\"selected\"";
           echo("<option value=\"" . $theme . "\"" . $sel . ">" . $theme . "</option>");
         }
       ?>
@@ -52,14 +56,14 @@
       <td><select name="timezone" style="width: 176px">
       <?php
         for ($x = -12;$x < 15;$x++)
-          echo("<option value=\"" . $x . "\"". ($users[$_SESSION["nick"]]["timezone"] == $x ? " selected=\"selected\"" : "") . 
+          echo("<option value=\"" . $x . "\"". ($admnuser["timezone"] == $x ? " selected=\"selected\"" : "") . 
                ">" . "GMT " . ($x > 0 ? "+" : "") . $x . ":00</option>");
       ?>
       </select></td>
     </tr>
     <tr>
       <td>Time format (<a href="tfhelp.php">?</a>):&nbsp;</td>
-      <td><input type="text" name="timeformat" style="width: 170px" value="<?php echo($users[$_SESSION["nick"]]["timeformat"]); ?>"/></td>
+      <td><input type="text" name="timeformat" style="width: 170px" value="<?php echo($admnuser["timeformat"]); ?>"/></td>
     </tr>
     <tr><th colspan="2">&nbsp;</th></tr>
     <tr>
@@ -68,20 +72,15 @@
   </table>
 </form>
 <?php
-  echo($acc_status);
+  echo($adm_acc_status);
 ?>
 </div>
-<div class="lefty">
-  <b>Other stuff</b><br/><br/>
-  <a href="delacc.php">Delete account</a><br/>
-  <?php
-    echo("<a href=\"state.php?u=" . $_SESSION["nick"] . "&amp;p=" . $users[$_SESSION["nick"]]["pwd"] . "\">Recover state.dat</a><br/>");
-  ?>
-  <a href="updatewrs.php">Update WR table</a><br/>
-</div>
 <?php
+    } else {
+      echo("<span style=\"color: #FF0000\">User don't exist!</span><br/>");
+    }
   } else {
-    echo("<span style=\"color: #FF0000\">You are nat logged in!</span><br/>");
+    echo("<span style=\"color: #FF0000\">You are nat admin!</span><br/>");
   }
 ?>
 <?php include("tpo.php"); ?>
