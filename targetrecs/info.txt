@@ -1,0 +1,321 @@
+god01 bene Legit 14,03
+god02 Spef SL 14,77
+god03 Zweq Legit 17,63
+god04 Zweq Legit 29,40
+god05 Kazan Legit 19,86
+god06 Spef Legit 30,19
+god07 Zweq Legit 27,92
+god08 Bjenn Legit 20,59
+god09 Spef Legit 50,04
+god10 Zweq Legit 10,62
+god11 Spef Legit 22,57
+god12 Honza Legit 20,65
+god13 Raven Legit 13,95
+god14 John Legit 17,66
+god15 Zweq Legit 49,70
+god16 John Legit 1:23,33
+god18 Mika Legit 44,24
+god20 Spef Legit 57,30
+god21 Kazan Legit 14,37
+god22 Bjenn Legit 38,69
+god23 Madness Legit 35,47
+god24 Grob Legit 40,73
+god25 Zweq Legit 24,26
+god26 Spef Legit 21,87
+god27 Kiiwi Legit 33,26
+god28 Spef Legit 47,44
+god29 Spef Legit 42,02
+god31 Spef Legit 1:11,05
+god32 FinMan Legit 42,31
+god33 Spef Legit 54,54
+god34 bene Legit 36,44
+god35 John Legit 2:13,43
+god36 Zweq Legit 57,08
+god37 Spef Legit 53,05
+god38 Madness Legit 28,90
+god39 Bjenn Legit 39,34
+god40 Bjenn Legit 1:20,93
+god41 Spef Legit 38,25
+god42 Tm Legit 47,35
+god43 Madness Legit 55,42
+god44 Zweq Legit 11,50
+god45 Bjenn Legit 32,45
+god46 Zweq Legit 52,96
+god47 Spef Legit 19,23
+god48 Kazan Legit 43,48
+god49 John Legit 37,95
+god50 Bjenn Legit 50,51
+god51 Kazan Legit 41,79
+god52 Zweq Legit 24,34
+god53 aspec Legit 17,12
+god54 Spef Legit 1:14,62
+
+leg01 Leek 14.08
+leg02 Mika 15.12
+leg03 TomCat Legit 17,86
+leg04 Axxu 29.91
+leg05 Kuper 20.02
+leg06 Zweq 30.90
+leg07 Mielz 30.61
+leg08 TorInge 20.84
+leg09 Morgan 55.83
+leg10 FinMan 10.88
+leg11 John 23.54
+leg12 Madman 20.92
+leg13 Lukazz 14.26
+leg14 Sla 17.86
+leg15 Zweq 52.44
+leg16 Sla 1.25.75
+leg17 Cap 54.32
+leg18 Zweq 44.75
+leg19 Juzam 37.08
+leg20 Mielz 59.74
+leg21 Karlis 14.48
+leg22 Sla 39.32
+leg23 Zweq 36.48
+leg24 Sla 45.40
+leg25 TorInge 24.50
+leg26 Jalli 22.56
+leg27 TorInge 34.72
+leg28 Mielz 49.86
+leg29 TorInge 43.50
+leg31 Xiphias 1.16.04
+leg32 Morgan 42.71
+leg33 Zweq 58.89
+leg34 bene Legit 36,85
+leg35 TorInge 2.17.46
+leg36 TorInge 57.94
+leg37 Bjorn 54.05
+leg38 Mielz 29.60
+leg39 Stini 40.15
+leg40 Zweq 1.23.57
+leg41 Kazan 38.56
+leg42 Kazan 48.20
+leg43 Labs Legit 56,84
+leg44 bene Legit 11,61
+leg45 Zweq 32.69
+leg46 Bjorn 54.63
+leg47 Zweq 19.61
+leg48 Morgan 47.00
+leg49 John 38.79
+leg50 TorInge 53.85
+leg51 Zweq 43.19
+leg52 Mielz 24.76
+leg53 Jalli 17.31
+leg54 Lukazz 1.20.49
+
+wc01 Fejm 14.12
+wc02 Karesz 15,30
+wc03 totem 18.05
+wc04 Frosty 30.30
+wc05 PELUSON27 20.44
+wc06 Cfilorvy 32.29
+wc07 FatherGod 33.84
+wc08 Karlis 21.15
+wc09 Jalli 59.44
+wc10 DaniL 12,10
+wc11 Bludek 24.77
+wc12 MadMan 21.60
+wc13 Karlis 15.75
+wc14 badyl 18.10
+wc15 badyl 56.11
+wc16 mr 1.29.46
+wc17 MGen 55.88
+wc18 Labs 45,24
+wc19 badyl 38.40
+wc20 badyl 1.03.22
+wc21 badyl 14.69
+wc22 Labs 40,27
+wc23 Morgan 38.35
+wc24 Mika 54.17
+wc25 Mika 24.90
+wc26 Cloud 24.19
+wc27 Janne 36.45
+wc28 badyl 52.30
+wc29 badyl 45.89
+wc30 badyl 33.39
+wc31 Mika 1.19.62
+wc32 Bludek 43.45
+wc33 badyl 1.01.73
+wc34 Morgan 37.46
+wc35 TorInge 2.23.66
+wc36 Lukazz 59.40
+wc37 badyl 55.97
+wc38 milagros 30.52
+wc39 KD 41.43
+wc40 IRK 1.26.73
+wc41 Frosty 39.55
+wc42 Grglth 49.28
+wc43 badyl 58.26
+wc44 badyl 11.80
+wc45 badyl 32.90
+wc46 Grglth 57.17
+wc47 TorInge 19.95
+wc48 pajen 49.36
+wc49 TorInge 40.49
+wc50 TorInge 56.19
+wc51 MGen 44.75
+wc52 ArSeNiC 25,39
+wc53 Lukazz 17.55
+wc54 psy 1.34.03
+
+pro01 error 14.18
+pro02 Frosty 15.66
+pro03 lammas 18.20
+pro04 Juish 30.66
+pro05 Blaztek 20.99
+pro06 Markku 33.41
+pro07 TheGepi 34.95
+pro08 Pab 21.87
+pro09 AndrY 1.01.92
+pro10 Tuska 12.94
+pro11 DR@CON 25.68
+pro12 Blaztek 22.40
+pro13 Fredrik 16.26
+pro14 Frosty 18.30
+pro15 igge 1.01.04
+pro16 AndrY 1.31.91
+pro17 PELUSON27 57.97
+pro18 ZiuteK 45.90
+pro19 Frosty 39.65
+pro20 ziiber 1.06.98
+pro21 Mawane 15.05
+pro22 Trabi 41,51
+pro23 AndrY 40.76
+pro24 dz 56.20
+pro25 Frosty 25.85
+pro26 mena 25.30
+pro27 Uube 37.62
+pro28 AndrY 53.87
+pro29 Juish 47.67
+pro30 aspec 33.65
+pro31 Boomer 1.22.66
+pro32 Qazz 43.75
+pro33 Bludek 1.07.29
+pro34 jonsykkel 38.31
+pro35 Labs 02:32,01
+pro36 Jokke 1.00.50
+pro37 Frosty 58.00
+pro38 Labs 31,73
+pro39 KD 43.42
+pro40 Trabi 01:28,65
+pro41 AndrY 40.46
+pro42 TomCat 51,21
+pro43 Trabi 59,44
+pro44 ziiber 12.47
+pro46 TomCat 01:04,97
+pro47 DMC 24.55
+pro48 zeth 53.94
+pro49 Boomer 41.93
+pro50 Trabi 58,34
+pro51 Pab 45.93
+pro52 ArSeNiC 26,34
+pro53 Pab 18.24
+pro54 TorInge 1.38.65
+
+good01 ArSeNiC 14.36
+good02 Fejm 16.99
+good03 ziiber 18.99
+good04 Trabi 31,51
+good05 mengerle 21.95
+good06 Fejm 34.55
+good07 Champi0N 36.40
+good08 jonsykkel 22.94
+good09 Fejm 1.05.94
+good10 edahl 14.92
+good11 mena 26.53
+good12 Chaza 23.91
+good13 TheGepi 17.48
+good14 Gioel 18.93
+good15 Mawane 1.07.85
+good16 Fredrik 1.34.37
+good17 ziiber 59.91
+good18 mena 46,95
+good19 ArSeNiC Legit 41,96
+good20 Albin 1.11.71
+good21 edahl 16.97
+good22 ziiber 43.47
+good23 ziiber 50.54
+good24 Jokke 1.02.28
+good25 Chaza 29.99
+good27 jonsykkel 38.92
+good28 Csabi 56,87
+good29 mena 53.04
+good30 kuchitsu 34.90
+good31 tram15 1.29.58
+good32 Fejm 44.40
+good33 Dux 1.24.21
+good34 Fejm 39.99
+good35 Jokke 2.44.57
+good36 MGen 01:02,97
+good37 Fredrik 1.01.20
+good38 ziiber 34.46
+good39 psy 46.74
+good40 Albin 1.33.41
+good41 DR@CON 41.99
+good42 Mawane 53.98
+good43 Fejm 1.03.47
+good44 stefankivb 18.66
+good45 ArSeNc 34.30
+good46 ziiber 1.11.98
+good47 onlainari 32.40
+good49 Joni 44.39
+good50 Shcaf 1.01.99
+good51 psy 54.48
+good52 kuchitsu 28.50
+good53 ArseNiC 19.66
+good54 Markku 1.54.56
+
+ok01 Frostidllo 14.55
+ok02 j- 17.42
+ok03 OLEG-USSR 20.75
+ok04 kuchitsu 33.32
+ok05 Ufo 22.31
+ok06 stefankivb 35.48
+ok07 OLEG-USSR 37.89
+ok08 edahl Legit 00:23:95
+ok09 Chaza 1.09.91
+ok10 ArSeNiC 28.60
+ok11 stefankivb 28.20
+ok12 Frostidllo 25.82
+ok13 Gioel 19.46
+ok14 Frostidllo 20.90
+ok15 j- 1.11.50
+ok16 edahl 1.38.20
+ok17 ArSeNiC Legit 1:01,34
+ok18 Frostidllo 48.99
+ok20 edahl Legit 01:17:57
+ok21 ArSeNiC 19.90
+ok22 kuchitsu 45.83
+ok23 ArSeNiC 55.63
+ok24 kuchitsu 1.09.66
+ok25 edahl Legit 00:31:21
+ok27 Frostidllo 43.19
+ok28 ArSeNiC Legit 1:00,86
+ok29 edahl Legit 01:09:87
+ok30 edahl Legit 00:35:97
+ok31 ArSeNiC Legit 1:36,56
+ok32 ArSeNiC Legit 46,45
+ok33 edahl 1.58.22
+ok35 Shcaf 3.26.09
+ok36 kuchitsu 1.08.91
+ok37 lammas 1.09.71
+ok38 ArSeNiC 37.76
+ok39 DR@CON 53.31
+ok40 ArSeNiC Legit 1:39,19
+ok41 edahl 44.93
+ok42 tram15 58.53
+ok43 ArSeNiC Legit 1:08,56
+ok44 ArSeNiC Legit 35,92
+ok45 ArSeNiC 36,10
+ok46 ArSeNiC 1.24.56
+ok47 Frostidllo 59.23
+ok48 Frostidllo 1.15.25
+ok49 edahl 49.89
+ok50 kuchitsu 1.07.74
+ok51 ArSeNIC 1.02.14
+ok52 Frostidllo 33.55
+ok53 stefankivb 21.49
+ok54 Frostidllo 2.17.75
+
+beg08 ArSeNiC 26,67

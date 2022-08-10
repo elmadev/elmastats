@@ -1,0 +1,6 @@
+RewriteEngine Off
+
+ErrorDocument 404 /404.php
+ErrorDocument 403 /403.php
+
+AddType application/octet-stream .rec

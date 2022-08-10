@@ -1,0 +1,89 @@
+a:link {text-decoration: none; color: #4671D5;}
+a:visited {text-decoration: none; color: #4671D5;}
+a:active {text-decoration: none; color: #4671D5;}
+a:hover {text-decoration: none; color: #6C8CD5;}
+a.ntime:link {text-decoration: none; color: #888888;}
+a.ntime:visited {text-decoration: none; color: #888888;}
+a.ntime:active {text-decoration: none; color: #888888;}
+a.ntime:hover {text-decoration: none; color: #BBBBBB;}
+a.ltime:link {text-decoration: none; color: #00CC00;}
+a.ltime:visited {text-decoration: none; color: #00CC00;}
+a.ltime:active {text-decoration: none; color: #00CC00;}
+a.ltime:hover {text-decoration: none; color: #00EE00;}
+
+body {
+  background-color: #D8D8D8;
+  color: #000000;
+}
+
+#main {
+  border: 1px solid #AAAAAA;
+  background-color: #E8E8E8;
+}
+
+a.header {
+  border: 1px solid #AAAAAA;
+  background-image: url("img/header_klassik.png");
+}
+
+#left {
+  border: 1px solid #AAAAAA;
+  background-color: #F8F8F8;
+}
+
+#mid {
+  border: 1px solid #AAAAAA;
+  background-color: #F8F8F8;
+}
+
+.menuheader {
+  border: 1px solid #AAAAAA;
+  background-color: #E8E8E8;
+}
+
+table.times {
+  border-style: solid;
+  border-color: #AAAAAA;
+  background-color: #F8F8F8;
+}
+th.times {
+  border-style: dotted;
+  border-color: #AAAAAA;
+  background-color: #EEEEEE;
+}
+td.times {
+  border-style: dotted;
+  border-color: #AAAAAA;
+}
+
+.box {
+  border: 1px solid #AAAAAA;
+  background-color: #D8D8D8;
+  color: #000000;
+}
+
+.box2 {
+  border: 1px solid #AAAAAA;
+  background-color: #D8D8D8;
+}
+
+/****tabber stuff****/
+
+ul.tabbernav {
+  border-bottom: 1px solid #AAAAAA;
+}
+
+ul.tabbernav li a {
+  border: 1px solid #AAAAAA;
+  background-color: #F8F8F8;
+}
+
+ul.tabbernav li.tabberactive a {
+  border-bottom: 1px solid #F8F8F8;
+  background-color: #F8F8F8;
+}
+
+.tabberlive .tabbertab {
+  border: 1px solid #AAAAAA;
+  background-color: #F8F8F8;
+}

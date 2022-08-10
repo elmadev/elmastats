@@ -1,0 +1,89 @@
+a:link {text-decoration: none; color: #4671D5;}
+a:visited {text-decoration: none; color: #4671D5;}
+a:active {text-decoration: none; color: #4671D5;}
+a:hover {text-decoration: none; color: #6C8CD5;}
+a.ntime:link {text-decoration: none; color: #EEEEEE;}
+a.ntime:visited {text-decoration: none; color: #EEEEEE;}
+a.ntime:active {text-decoration: none; color: #EEEEEE;}
+a.ntime:hover {text-decoration: none; color: #FFFFFF;}
+a.ltime:link {text-decoration: none; color: #00CC00;}
+a.ltime:visited {text-decoration: none; color: #00CC00;}
+a.ltime:active {text-decoration: none; color: #00CC00;}
+a.ltime:hover {text-decoration: none; color: #00EE00;}
+
+body {
+  background-color: #202020;
+  color: #CCCCCC;
+}
+
+#main {
+  border: 1px solid #000000;
+  background-color: #303030;
+}
+
+a.header {
+  border: 1px solid #000000;
+  background-image: url("../img/header.png");
+}
+
+#left {
+  border: 1px solid #000000;
+  
+}
+
+#mid {
+  border: 1px solid #000000;
+  
+}
+
+.menuheader {
+  border: 1px solid #000000;
+  background-color: #3F3F3F;
+}
+
+table.times {
+  border-style: solid;
+  border-color: #000000;
+  background-color: #303030;
+}
+th.times {
+  border-style: dotted;
+  border-color: #000000;
+  background-color: #3F3F3F;
+}
+td.times {
+  border-style: dotted;
+  border-color: #000000;
+}
+
+.box {
+  border: 1px solid #000000;
+  background-color: #AAAAAA;
+  color: #000000;
+}
+
+.box2 {
+  border: 1px solid #000000;
+  background-color: #444444;
+}
+
+/****tabber stuff****/
+
+ul.tabbernav {
+  border-bottom: 1px solid #000000;
+}
+
+ul.tabbernav li a {
+  border: 1px solid #000000;
+  background-color: #404040;
+}
+
+ul.tabbernav li.tabberactive a {
+  border-bottom: 1px solid #404040;
+  background-color: #404040;
+}
+
+.tabberlive .tabbertab {
+  border: 1px solid #000000;
+  background-color: #404040;
+}

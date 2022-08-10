@@ -1,0 +1,92 @@
+a:link {text-decoration: none; color: #FFFF00;}
+a:visited {text-decoration: none; color: #FFFF00;}
+a:active {text-decoration: none; color: #0000FF;}
+a:hover {text-decoration: none; color: #FF00FF;}
+a.ntime:link {text-decoration: none; color: #FF00FF;}
+a.ntime:visited {text-decoration: none; color: #FF00FF;}
+a.ntime:active {text-decoration: none; color: #0000FF;}
+a.ntime:hover {text-decoration: none; color: #FFFF00;}
+a.ltime:link {text-decoration: none; color: #FFFF00;}
+a.ltime:visited {text-decoration: none; color: #0000FF;}
+a.ltime:active {text-decoration: none; color: #FF00FF;}
+a.ltime:hover {text-decoration: none; color: #FF00FF;}
+
+body {
+  background-color: #00FF00;
+  color: #FF0000;
+}
+
+#main {
+  border: 1px solid #AAAAAA;
+  background-color: #BB00BB;
+}
+
+a.header {
+  border: 1px solid #AAAAAA;
+  background-image: url("img/headerref.png");
+}
+
+#left {
+  border: 1px solid #AAAAAA;
+  background-color: #BB0000;
+}
+
+#mid {
+  border: 1px solid #AAAAAA;
+  background-color: #0000BB;
+}
+
+.menuheader {
+  border: 1px solid #AAAAAA;
+  background-color: #0000CC;
+}
+
+table.times {
+  border-style: solid;
+  border-color: #AAAAAA;
+  background-color: #00AA00;
+}
+th.times {
+  border-style: dotted;
+  border-color: #AAAAAA;
+  background-color: #00AA00;
+}
+td.times {
+  border-style: dotted;
+  border-color: #BB0000;
+}
+
+.box {
+  border: 1px solid #AAAAAA;
+  background-color: #00FFFF;
+  color: #000000;
+}
+
+.box2 {
+  border: 1px solid #AAAAAA;
+  background-color: #00FFFF;
+}
+
+/****tabber stuff****/
+
+ul.tabbernav {
+  border-bottom: 1px solid #AAAAAA;
+}
+
+ul.tabbernav li a {
+  border: 1px solid #AAAAAA;
+  background-color: #F8F8F8;
+}
+
+ul.tabbernav li.tabberactive a {
+  border-bottom: 1px solid #F8F8F8;
+  background-color: #F8F8F8;
+}
+
+.tabberlive .tabbertab {
+  border: 1px solid #AAAAAA;
+  background-color: #F8F8F8;
+}
+
+* { border: 5px groove pink }
+a{border: none};

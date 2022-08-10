@@ -1,0 +1,711 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+ <title>Moposite - Records - World Records</title>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+ <meta name="author" content="Pekka Tahkola, Lassi Heikkinen" />
+ <meta name="keywords" content="elastomania, elasto, mania, action, supercross, across, super, cross, levels, replays, world, records, mopolauta, hoyla, across 2, moposite, small, game, motorcycle, time, trial, motor, motorbike, bike" />
+ <meta name="description" content="A computer game site (Elasto Mania)" />
+ <meta name="ICBM" content="65.0506, 25.4748" />
+ <meta name="DC.title" content="Moposite - Elasto Mania All Around" />
+ <meta http-equiv="pragma" content="no-cache" />
+ <meta http-equiv="expires" content="-1" />
+ <meta http-equiv="cache-control" content="no-cache" />
+ <!--[if gte IE 5.5000]>
+  <script type="text/javascript" src="inc/pngfix.js"></script>
+ <![endif]-->
+ <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+ <script type="text/javascript" src="/scripts/popupPic.js"></script>
+ <script type="text/javascript" src="/scripts/externalLinks.js"></script>   
+ 
+ <style type="text/css">
+<!-- @import "/css/classic/classic.php"; --> 
+<!-- temp styles for OLD logo in top right -->
+a.hi:link {color: #C2BA3E; text-decoration: none;}
+a.hi:visited {color: #C2BA3E; text-decoration: none;}
+a.hi:active {color: #C2BA3E; text-decoration: none;}
+a.hi:hover {color: #C2BA3E; text-decoration: none;}
+        
+ </style>
+ 
+ <link rel="shortcut icon" href="/css/classic/favicon.ico" />
+ <link rel="alternate" title="Moposite News RSS" href="/news_rss.xml" type="application/rss+xml" />
+ 
+</head>
+
+<body>
+
+<div class="margin margin12">
+
+<h5><a title="Switch the site to the text mode, good for printing and mobile device usage" class="textVersion" href="/records_elma_wrs.php?textversion=show">Text version</a> - <a title="Jump directly to the menu" class="hide" href="#menu">Jump to menu</a><span class="hide"> -</span> 
+<a title='Hide the columns and get more space' class='textVersion' href='/records_elma_wrs.php?menu=hide'>Hide columns</a> - <a accesskey="3" title="Site map is an overview of the site's contents" class="textVersion" href="/info_moposite_site_map.php">Site map</a>
+ - <a title="Edit your personal settings" class="textVersion" href="/panel.php">Panel</a>
+</h5>
+</div>
+
+<div id="shortMenu" class="hide">
+
+	<h5><span class="hide">Menu:</span>&nbsp;
+<a href="records.php">Records</a> > <a href="records_elma_wrs.php">Elma World Records</a>&nbsp;</h5>
+
+</div>
+
+<hr class="hide" />
+
+<div id="pageWrapper">
+	<div class="inside">
+		<div id="Logo">
+
+			<a title="Main page" id="Logo2" href="/index.php" accesskey="1"><span class="hide">Moposite - Elasto Mania All Around</span></a>
+			<a title="Main page" id="logoBgLink" href="#"></a>
+
+		</div>
+	</div>
+	<div class="hnav">
+		
+		<hr class="hide" />
+			
+	</div>
+	<div class="outerColumnContainer">
+		<div id="innerColumnContainer">
+			<div id="SOWrap">
+				<div id="middleColumn">
+					<div class="inside">
+						<div id="middleContent">
+                                                
+<a name="top"></a>
+
+<div style="background-color: #ffffff; border: solid 1px #000000; font-family: Times new roman;">
+
+<br />
+
+<div style="text-align: center;">
+ <img src="images/elastoma.gif" height="65" width="319" border="0" alt="Elasto Mania" />
+ <img src="images/lobogo.gif" height="45" width="60" border="0" alt="Flag" /><br /><br />
+
+ <img src="images/besttim2.gif" height="37" width="233" border="0" alt="Best Times" /><br /><br />
+ <span style="font-family: Arial; font-size: 18px;"><b>TABLE #419</b></span><br /><br />
+ <span style="font-family: Arial; font-size: 14px;"><b>Updated 6 May 2022</b></span><br /><br />
+</div>
+
+<div style="font-family: Times new roman; text-align: center;">
+<center>
+<table class="wrtable">
+ <tr>
+  <td class="wrth" align='center' width="155">Track</td>
+  <td class="wrth" align='center' width="50">Time</td>
+  <td class="wrth" align='center' width="130">Name</td>
+  <td class="wrth" align='center' width="155">Track</td>
+  <td class="wrth" align='center' width="50">Time</td>
+  <td class="wrth" align='center' width="130">Name</td>
+ </tr>
+
+
+<tr>
+<td class='wr' align='left'>1. Warm Up</td>
+<td class='wr' align='right'>13,79</td>
+<td class='wr' align='left'>Spef <a href='team/dat'><img style='border: none' src='/images/logos/dat.gif' width="40" height="20"></a></td><td class='wr' align='left'>28. Bounce Back</td>
+<td class='wr' align='right'>46,19</td>
+<td class='wr' align='left'>Zweq <a href='team/WNO'><img style='border: none' src='/images/logos/wno.gif' width="40" height="20"></a></td></tr>
+<tr>
+<td class='wr' align='left'>2. Flat Track</td>
+<td class='wr' align='right'>14,64</td>
+<td class='wr' align='left'>Spef <a href='team/dat'><img style='border: none' src='/images/logos/dat.gif' width="40" height="20"></a></td><td class='wr' align='left'>29. Headbanger</td>
+<td class='wr' align='right'>40,97</td>
+<td class='wr' align='left'>Spef <a href='team/dat'><img style='border: none' src='/images/logos/dat.gif' width="40" height="20"></a></td></tr>
+<tr>
+<td class='wr' align='left'>3. Twin Peaks</td>
+<td class='wr' align='right'>17,47</td>
+<td class='wr' align='left'>Spef <a href='team/dat'><img style='border: none' src='/images/logos/dat.gif' width="40" height="20"></a></td><td class='wr' align='left'>30. Pipe</td>
+<td class='wr' align='right'>28,00</td>
+<td class='wr' align='left'>Mielz <a href='team/SPEED'><img style='border: none' src='/images/logos/SPEED.gif' width="36" height="20"></a></td></tr>
+<tr>
+<td class='wr' align='left'>4. Over and Under</td>
+<td class='wr' align='right'>28,86</td>
+<td class='wr' align='left'>Zweq <a href='team/WNO'><img style='border: none' src='/images/logos/wno.gif' width="40" height="20"></a></td><td class='wr' align='left'>31. Animal Farm</td>
+<td class='wr' align='right'>1:08,65</td>
+<td class='wr' align='left'>FinMan <a href='team/dat'><img style='border: none' src='/images/logos/dat.gif' width="40" height="20"></a></td></tr>
+<tr>
+<td class='wr' align='left'>5. Uphill Battle</td>
+<td class='wr' align='right'>19,76</td>
+<td class='wr' align='left'>Zweq <a href='team/WNO'><img style='border: none' src='/images/logos/wno.gif' width="40" height="20"></a></td><td class='wr' align='left'>32. Steep Corner</td>
+<td class='wr' align='right'>42,20</td>
+<td class='wr' align='left'>Kazan [<a class='noUnderline' href='team/'.getteam(0).''></a>]</td></tr>
+<tr>
+<td class='wr' align='left'>6. Long Haul</td>
+<td class='wr' align='right'>29,91</td>
+<td class='wr' align='left'>Spef <a style='border: none' href='team/SPEED'><img style='border: none' src='/images/logos/SPEED.gif' width="36" height="20"></a></td><td class='wr' align='left'>33. Zig-Zag</td>
+<td class='wr' align='right'>52,54</td>
+<td class='wr' align='left'>Spef <a href='team/dat'><img style='border: none' src='/images/logos/dat.gif' width="40" height="20"></a></td></tr>
+<tr>
+<td class='wr' align='left'>7. Hi Flyer</td>
+<td class='wr' align='right'>25,91</td>
+<td class='wr' align='left'>Zweq <a href='team/WNO'><img style='border: none' src='/images/logos/wno.gif' width="40" height="20"></a></td><td class='wr' align='left'>34. Bumpy Journey</td>
+<td class='wr' align='right'>36,17</td>
+<td class='wr' align='left'>bene <a href='team/dat'><img style='border: none' src='/images/logos/dat.gif' width="40" height="20"></a></td></tr>
+<tr>
+<td class='wr' align='left'>8. Tag</td>
+<td class='wr' align='right'>20,37</td>
+<td class='wr' align='left'>Kazan <a href='team/EF'><img style='border: none' src='/images/logos/EF.gif' width="40" height="20"></a></td><td class='wr' align='left'>35. Labyrinth Pro</td>
+<td class='wr' align='right'>2:09,73</td>
+<td class='wr' align='left'>Zweq <a href='team/WNO'><img style='border: none' src='/images/logos/wno.gif' width="40" height="20"></a></td></tr>
+<tr>
+<td class='wr' align='left'>9. Tunnel Terror</td>
+<td class='wr' align='right'>48,86</td>
+<td class='wr' align='left'>Kazan <a href='team/EF'><img style='border: none' src='/images/logos/EF.gif' width="40" height="20"></a></td><td class='wr' align='left'>36. Fruit in the Den</td>
+<td class='wr' align='right'>56,43</td>
+<td class='wr' align='left'>FinMan <a href='team/dat'><img style='border: none' src='/images/logos/dat.gif' width="40" height="20"></a></td></tr>
+<tr>
+<td class='wr' align='left'>10. The Steppes</td>
+<td class='wr' align='right'>10,50</td>
+<td class='wr' align='left'>Spef <a style='border: none' href='team/SPEED'><img style='border: none' src='/images/logos/SPEED.gif' width="36" height="20"></a></td><td class='wr' align='left'>37. Jaws</td>
+<td class='wr' align='right'>52,69</td>
+<td class='wr' align='left'>Spef <a style='border: none' href='team/SPEED'><img style='border: none' src='/images/logos/SPEED.gif' width="36" height="20"></a></td></tr>
+<tr>
+<td class='wr' align='left'>11. Gravity Ride</td>
+<td class='wr' align='right'>22,15</td>
+<td class='wr' align='left'>Spef <a href='team/dat'><img style='border: none' src='/images/logos/dat.gif' width="40" height="20"></a></td><td class='wr' align='left'>38. Curvaceous</td>
+<td class='wr' align='right'>27,92</td>
+<td class='wr' align='left'>Spef <a href='team/dat'><img style='border: none' src='/images/logos/dat.gif' width="40" height="20"></a></td></tr>
+<tr>
+<td class='wr' align='left'>12. Islands in the Sky</td>
+<td class='wr' align='right'>20,62</td>
+<td class='wr' align='left'>zaraptor</td><td class='wr' align='left'>39. Haircut</td>
+<td class='wr' align='right'>38,36</td>
+<td class='wr' align='left'>Mielz <a href='team/SPEED'><img style='border: none' src='/images/logos/SPEED.gif' width="36" height="20"></a></td></tr>
+<tr>
+<td class='wr' align='left'>13. Hill Legend</td>
+<td class='wr' align='right'>13,79</td>
+<td class='wr' align='left'>Spef <a href='team/dat'><img style='border: none' src='/images/logos/dat.gif' width="40" height="20"></a></td><td class='wr' align='left'>40. Double Trouble</td>
+<td class='wr' align='right'>1:19,54</td>
+<td class='wr' align='left'>Kazan [<a class='noUnderline' href='team/'.getteam(0).''></a>]</td></tr>
+<tr>
+<td class='wr' align='left'>14. Loop-de-Loop</td>
+<td class='wr' align='right'>17,56</td>
+<td class='wr' align='left'>bene <a style='border: none' href='team/EF'><img style='border: none' src='/images/logos/EF.gif' width="40" height="20"></a></td><td class='wr' align='left'>41. Framework</td>
+<td class='wr' align='right'>37,93</td>
+<td class='wr' align='left'>Spef <a href='team/dat'><img style='border: none' src='/images/logos/dat.gif' width="40" height="20"></a></td></tr>
+<tr>
+<td class='wr' align='left'>15. Serpents Tale</td>
+<td class='wr' align='right'>46,63</td>
+<td class='wr' align='left'>Kazan <a href='team/EF'><img style='border: none' src='/images/logos/EF.gif' width="40" height="20"></a></td><td class='wr' align='left'>42. Enduro</td>
+<td class='wr' align='right'>46,76</td>
+<td class='wr' align='left'>Zweq <a href='team/WNO'><img style='border: none' src='/images/logos/wno.gif' width="40" height="20"></a></td></tr>
+<tr>
+<td class='wr' align='left'>16. New Wave</td>
+<td class='wr' align='right'>1:22,41</td>
+<td class='wr' align='left'>Zweq <a href='team/WNO'><img style='border: none' src='/images/logos/wno.gif' width="40" height="20"></a></td><td class='wr' align='left'>43. He He</td>
+<td class='wr' align='right'>55,17</td>
+<td class='wr' align='left'>Spef <a style='border: none' href='team/SPEED'><img style='border: none' src='/images/logos/SPEED.gif' width="36" height="20"></a></td></tr>
+<tr>
+<td class='wr' align='left'>17. Labyrinth</td>
+<td class='wr' align='right'>52,36</td>
+<td class='wr' align='left'>Kazan [<a class='noUnderline' href='team/'.getteam(0).''></a>]</td><td class='wr' align='left'>44. Freefall</td>
+<td class='wr' align='right'>11,37</td>
+<td class='wr' align='left'>Spef <a href='team/dat'><img style='border: none' src='/images/logos/dat.gif' width="40" height="20"></a></td></tr>
+<tr>
+<td class='wr' align='left'>18. Spiral</td>
+<td class='wrnew' align='right'>43,99</td>
+<td class='wrnew' align='left'>Tm <a href='team/EF'><img style='border: none' src='/images/logos/EF.gif' width="40" height="20"></a></td><td class='wr' align='left'>45. Sink</td>
+<td class='wr' align='right'>32,23</td>
+<td class='wr' align='left'>Nekit</td></tr>
+<tr>
+<td class='wr' align='left'>19. Turnaround</td>
+<td class='wr' align='right'>35,46</td>
+<td class='wr' align='left'>Zweq <a href='team/WNO'><img style='border: none' src='/images/logos/wno.gif' width="40" height="20"></a></td><td class='wr' align='left'>46. Bowling</td>
+<td class='wr' align='right'>51,37</td>
+<td class='wr' align='left'>Zweq <a href='team/WNO'><img style='border: none' src='/images/logos/wno.gif' width="40" height="20"></a></td></tr>
+<tr>
+<td class='wr' align='left'>20. Upside Down</td>
+<td class='wr' align='right'>56,46</td>
+<td class='wr' align='left'>Spef <a style='border: none' href='team/SPEED'><img style='border: none' src='/images/logos/SPEED.gif' width="36" height="20"></a></td><td class='wr' align='left'>47. Enigma</td>
+<td class='wr' align='right'>19,13</td>
+<td class='wr' align='left'>Mielz <a href='team/SPEED'><img style='border: none' src='/images/logos/SPEED.gif' width="36" height="20"></a></td></tr>
+<tr>
+<td class='wr' align='left'>21. Hangman</td>
+<td class='wr' align='right'>14,31</td>
+<td class='wr' align='left'>Nekit</td><td class='wr' align='left'>48. Downhill</td>
+<td class='wr' align='right'>41,76</td>
+<td class='wr' align='left'>Zweq <a href='team/WNO'><img style='border: none' src='/images/logos/wno.gif' width="40" height="20"></a></td></tr>
+<tr>
+<td class='wr' align='left'>22. Slalom</td>
+<td class='wr' align='right'>38,55</td>
+<td class='wr' align='left'>Kazan [<a class='noUnderline' href='team/'.getteam(0).''></a>]</td><td class='wr' align='left'>49. What the Heck</td>
+<td class='wr' align='right'>37,66</td>
+<td class='wr' align='left'>Spef <a style='border: none' href='team/SPEED'><img style='border: none' src='/images/logos/SPEED.gif' width="36" height="20"></a></td></tr>
+<tr>
+<td class='wr' align='left'>23. Quick Round</td>
+<td class='wr' align='right'>35,27</td>
+<td class='wr' align='left'>Spef <a style='border: none' href='team/SPEED'><img style='border: none' src='/images/logos/SPEED.gif' width="36" height="20"></a></td><td class='wr' align='left'>50. Expert System</td>
+<td class='wr' align='right'>49,67</td>
+<td class='wr' align='left'>Zweq <a href='team/WNO'><img style='border: none' src='/images/logos/wno.gif' width="40" height="20"></a></td></tr>
+<tr>
+<td class='wr' align='left'>24. Ramp Frenzy</td>
+<td class='wr' align='right'>39,21</td>
+<td class='wr' align='left'>Spef <a href='team/dat'><img style='border: none' src='/images/logos/dat.gif' width="40" height="20"></a></td><td class='wr' align='left'>51. Tricks Abound</td>
+<td class='wr' align='right'>38,73</td>
+<td class='wr' align='left'>Spef <a href='team/dat'><img style='border: none' src='/images/logos/dat.gif' width="40" height="20"></a></td></tr>
+<tr>
+<td class='wr' align='left'>25. Precarious</td>
+<td class='wr' align='right'>24,02</td>
+<td class='wr' align='left'>Spef <a href='team/dat'><img style='border: none' src='/images/logos/dat.gif' width="40" height="20"></a></td><td class='wr' align='left'>52. Hang Tight</td>
+<td class='wr' align='right'>24,15</td>
+<td class='wr' align='left'>Zweq <a href='team/WNO'><img style='border: none' src='/images/logos/wno.gif' width="40" height="20"></a></td></tr>
+<tr>
+<td class='wr' align='left'>26. Circuitous</td>
+<td class='wr' align='right'>21,53</td>
+<td class='wr' align='left'>Mielz <a href='team/SPEED'><img style='border: none' src='/images/logos/SPEED.gif' width="36" height="20"></a></td><td class='wr' align='left'>53. Hooked</td>
+<td class='wr' align='right'>16,39</td>
+<td class='wr' align='left'>Zweq <a href='team/WNO'><img style='border: none' src='/images/logos/wno.gif' width="40" height="20"></a></td></tr>
+<tr>
+<td class='wr' align='left'>27. Shelf Life</td>
+<td class='wr' align='right'>32,92</td>
+<td class='wr' align='left'>Spef <a style='border: none' href='team/SPEED'><img style='border: none' src='/images/logos/SPEED.gif' width="36" height="20"></a></td><td class='wr' align='left'>54. Apple Harvest</td>
+<td class='wr' align='right'>1:12,89</td>
+<td class='wr' align='left'>Kazan [<a class='noUnderline' href='team/'.getteam(0).''></a>]</td></tr>
+
+</table>
+<p style="text-align: center; font-size: 18px; margin-top: 10px">Total time: 34:21,91</p>
+</center>
+</div>
+</div>
+
+                        </div>
+
+                                                <a name="menu"></a>
+						<hr class="hide" />
+
+                    </div>
+                </div>
+				<div id="leftColumn" >
+					<div class="inside">
+						<div class="vnav">
+                            <div class="FrameHead" style="background-color: black; color: gold; font-weight: bold">
+
+<!--<div class="rfloat"><a href="news_comments.php?newsid=1959" style="text-decoration: none; padding: 1px 4px; border: 1px solid #000; border-radius: 15px; font-size: 10px; background: white">?</a></div>-->
+
+<h2><span class="notChar">&not;</span> <span title="The best Elasto Mania links around the whole community which you should visit." class="ColumnHeading" style="letter-spacing: 1.2pt">HIGHLIGHTS</span></h2>
+
+                            </div>
+                            <div class="columnContent" id="shortcutsBox" style="background-color: white">
+                                <ol class="font2" style="padding-left: 20px; margin-bottom: 0">
+
+<li class="font2"><a href="https://moposite.com/records_elma_wrs.php" target="_blank">WR table</a></li>
+<li class="font2"><a href="https://moposite.com/records_across.php" target="_blank">Across WR table</a></li>
+<li class="font2"><a href="https://mopolauta.moposite.com/viewtopic.php?p=163344#p163344" target="_blank">Total times list</a></li>
+<li class="font2"><a href="https://pulu.org/en/60-history-of-elasto-mania-1995-2018" target="_blank">History of Elasto Mania (1995-2018)</a></li>
+<li class="font2"><a href="https://elastomania.com/" target="_blank">Official website</a></li>
+<li class="font2"><a href="http://elmaonline.net/" target="_blank">Play Elma Online (EOL)</a></li>
+<li class="font2"><a href="https://www.youtube.com/watch?v=2ShkjHs7OkQ" target="_blank">Speedrun (34:58,49)</a></li>
+<li class="font2"><a href="http://mopolauta.moposite.com/" target="_blank">Mopolauta forum</a></li>
+<!--<li class="font2"><a href="http://recsource.tv">Watch replays</a></li>-->
+<li class="font2"><a href="http://archive.moposite.com/" target="_blank">Archive</a></li>
+<li class="font2"><a href="https://mopolauta.moposite.com/viewtopic.php?f=1&t=9522" target="_blank">Discord chat</a> and #across (IRCnet)</li>
+
+                                </ol>
+
+<p style="margin: 0; text-align: right"><small><em>2022-01-20</em></small></p>
+                            </div>
+							<div class="FrameHead">
+													<div class="rfloat">
+								<span class="block pointer" id="up2" onclick="document.getElementById('up2').style.display='none'; document.getElementById('menuBox').style.display='none'; document.getElementById('down2').style.display='block'">-</span>
+								<span class="hide pointer" id="down2" onclick="document.getElementById('up2').style.display='block'; document.getElementById('menuBox').style.display='block'; document.getElementById('down2').style.display='none'">+</span>
+								</div>								<h2><span class="notChar">&not;</span> <a title="Site map is an overview of the site's contents" class="ColumnHeading" href="/info_moposite_site_map.php">Menu (2006)</a></h2>
+
+								</div>
+								<div class="columnContent" id="menuBox">
+								<ul class="mainmenu">
+
+  <li class="menuLiOuter"><span class="menuLiInner"><a class="menu" href="/main.php">Main</a> / <a class="menu" href="/news.php">News</a></span></li>
+  <li class="menuLiOuter"><span class="menuLiInner"><a class="menu" href="/info.php" title="All kind of information concerning the games and the site">Information</a></span></li>
+  <li class="menuLiOuter"><span class="menuLiInner"><a class="menuOpen" href="/records.php" title="Best times of the official levels">Records</a></span>
+  <ul class="mainmenuSub">
+    <li class="menuSubOpenLiOuter"><span class="menuLiInner"><a class="menuSub" href="/records_elma_wrs.php" title="World best times">Elma World Records</a></span>
+    <ul class="mainmenuSub">
+      <li class="menuSubSubLiOuter"><span class="menuLiInner"><a class="menuSub" href="/records_wr_statistics.php" title="Elma World Records statistics">Statistics</a></span></li>
+    </ul></li>
+    <li class="menuSubLiOuter"><span class="menuLiInner"><a class="menuSub" href="/records_across.php" title="World best times of Action SuperCross">Across records</a></span></li>
+    <li class="menuSubLiOuter"><span class="menuLiInner"><a class="menuSub" href="/records_olp.php" title="World best times of Official Level Pack">OLP records</a></span></li>
+  </ul></li>
+  <li class="menuLiOuter"><span class="menuLiInner"><a class="menu" href="/contests.php" title="All kinds of competitions organized by the community">Contests</a></span></li>
+  <li class="menuLiOuter"><span class="menuLiInner"><a class="menu" href="/downloads.php" title="A central of downloadable items suchs as levels, replays and LGRs">Downloads</a></span></li>
+  <li class="menuLiOuter"><span class="menuLiInner"><a class="menu" href="/community.php" title="People around the games">Community</a></span></li>
+  <li class="menuLiOuter"><span class="menuLiInner"><a class="menu" href="/stuff.php" title="All kind of random Elma stuff">Stuff</a></span></li>
+  <li class="menuLiOuter"><span class="menuLiInner"><a class="menu" href="/mopolauta" title="Elasto Mania discussion board">Mopolauta</a></span></li>
+
+								</ul>
+		
+							</div>
+							<div class="FrameHead">
+
+								<hr class="hide" />
+
+																<div class="rfloat">
+								<span class="block pointer" id="up3" onclick="document.getElementById('up3').style.display='none'; document.getElementById('panel').style.display='none'; document.getElementById('down3').style.display='block'">-</span>
+								<span class="hide pointer" id="down3" onclick="document.getElementById('up3').style.display='block'; document.getElementById('panel').style.display='block'; document.getElementById('down3').style.display='none'">+</span>
+								</div>								<h2><span class="notChar">&not;</span> <a title="Edit your personal settings" class="ColumnHeading" href="/panel.php" accesskey="2">Panel</a></h2>
+
+								</div>
+								<div class="columnContent" id="panel">
+
+								<form method="post" id="login" action="/records_elma_wrs.php">
+								<div class="centered">
+								<input type="hidden" name="login" value="1" />
+									<div class="margin2 left">
+                                                                <a title="User name">U</a>: <input tabindex="1" title="User name" size="13" type="text" name="nick" />
+								</div>
+								<div class="margin3 left">
+								<a title="Password">P</a>: <input tabindex="2" title="Password" class="ieBug2" size="10" type="password" name="pass" />
+							 <input tabindex="4" class="noBR ieBug3 space2" type="submit" value=">" /> 
+									</div>
+								</div>
+								<p class="para centered"><label for="remember_me">Remember me</label> <input tabindex="3" class="ieBug" type="checkbox" id="remember_me" name="stayin" /></p>
+								<h4 class="space"><a href="/panel_identity.php">Register</a> - <a href="/passreset.php">Forgot password?</a></h4>
+								</form>
+
+				
+							</div>
+							<div class="FrameHead">
+
+								<hr class="hide" />
+															<div class="rfloat">
+								<span class="block pointer" id="up4" onclick="document.getElementById('up4').style.display='none'; document.getElementById('toolsBox').style.display='none'; document.getElementById('down4').style.display='block'">-</span>
+								<span class="hide pointer" id="down4" onclick="document.getElementById('up4').style.display='block'; document.getElementById('toolsBox').style.display='block'; document.getElementById('down4').style.display='none'">+</span>
+								</div>								<h2><span class="notChar">&not;</span> Tools</h2>
+
+								</div>
+								<div class="columnContent" id="toolsBox">
+							
+								<div class="font2 centered" id="toolsList">	
+								
+									<a href="/info_help.php" accesskey="6">Help</a> -
+									<a href="/info_moposite_site_map.php">Site map</a> - 
+									<a href="/panel.php">Panel</a>
+									 
+								</div>
+
+
+								<div id="clock" class="font2 centered">
+
+									Date: 7. May 2022<br />
+									<a href="http://www.timeanddate.com/worldclock/city.html?n=295">Time</a>: 14:12 <glo>UTC</glo>
+
+								</div>
+
+								<form action="">
+								<div class="right">
+
+									<select tabindex='6' class='menu' name="redirect" onchange="top.location=this.options[selectedIndex].value">
+										<option selected="selected" class="subject">Site navigator</option>
+										<option class="main" value='/main.php'>>&nbsp;Main</option>
+										<option class="main" value='/news.php'>>&nbsp;News</option>
+										<option class="main" value='/info.php'>>&nbsp;Information    </option>
+										<option value='/info_games.php'>&nbsp;&nbsp;>&nbsp;Games</option>
+										<option value='/info_games_across.php'>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;Across</option>
+										<option value='/info_games_elma.php'>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;Elasto Mania</option>
+										<option value='/info_games_new_versions.php'>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;New versions?</option>
+										<option value='/info_games_order.php'>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;Order</option>
+										<option value='/info_knowledge.php'>&nbsp;&nbsp;>&nbsp;Knowledge</option>
+										<option value='/info_knowledge_playing.php'>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;Playing</option>
+										<option value='/info_knowledge_designing.php'>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;Designing</option>
+										<option value='/info_knowledge_creating.php'>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;Creating</option>
+										<option value='/info_knowledge_tweaking.php'>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;Tweaking</option>
+										<option value='/info_moposite.php'>&nbsp;&nbsp;>&nbsp;Moposite</option>
+										<option value='/info_moposite_history.php'>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;History</option>
+										<option value='/info_moposite_future.php'>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;Future </option>
+										<option value='/info_moposite_visitors.php'>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;Visitors</option>
+										<option value='/info_moposite_credits.php'>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;Credits</option>
+										<option value='/info_moposite_contacts.php'>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;Contacts</option>
+										<option value='/info_moposite_site_map.php'>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;Site map</option>
+										<option value='/info_help.php'>&nbsp;&nbsp;>&nbsp;Help</option>
+										<option value='/info_help_hints.php'>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;Hints and tips</option>
+										<option value='/info_help_faq.php'>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;FAQ</option>
+										<option value='/info_help_glossary.php'>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;Glossary</option>
+										<option class="main" value='/records.php'>>&nbsp;Records</option>
+										<option value='/records_elma_wrs.php'>&nbsp;&nbsp;>&nbsp;Elma WRs</option>
+										<option value='/records_wr_statistics.php'>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;Statistics</option>
+										<option value='/records_across.php'>&nbsp;&nbsp;>&nbsp;Across records</option>
+										<option value='/records_olp.php'>&nbsp;&nbsp;>&nbsp;OLP records</option>
+										<option class="main" value='/contests.php'>>&nbsp;Contests</option>
+										<option value='/contests_kinglist.php'>&nbsp;&nbsp;>&nbsp;Kinglist</option>
+										<option value='/contests_kinglist_hoyla_mission.php'>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;Höylä Mission</option>
+										<option value='/contests_kinglist_custom_levels.php'>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;Custom levels</option>
+										<option value='/contests_kinglist_lost_internals.php'>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;Lost Internals</option>
+										<option value='/contests_kinglist_mc_levels.php'>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;MC levels</option>
+										<option value='/contests_kinglist_special_levels.php'>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;Special levels</option>
+										<option value='/contests_kinglist_lgr_levels.php'>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;LGR levels</option>
+										<option value='/contests_world_cups.php'>&nbsp;&nbsp;>&nbsp;World Cups</option>
+										<option value='/contests_battles.php'>&nbsp;&nbsp;>&nbsp;Battles</option>
+										<option value='/contests_lom.php'>&nbsp;&nbsp;>&nbsp;Level of month</option>
+										<option value='/contests_24htt.php'>&nbsp;&nbsp;>&nbsp;TT in 24 h</option>
+										<option value='/contests_official_levelpacks.php'>&nbsp;&nbsp;>&nbsp;Of. levelpacks</option>
+										<option class="main" value='/downloads.php'>>&nbsp;Downloads</option>
+										<option value='/downloads_levels.php'>&nbsp;&nbsp;>&nbsp;Levels</option>
+										<option value='/downloads_replays.php'>&nbsp;&nbsp;>&nbsp;Replays</option>
+										<option value='/downloads_lgrs.php'>&nbsp;&nbsp;>&nbsp;LGRs</option>
+										<option class="main" value='/community.php'>>&nbsp;Community</option>
+										<option value='/community_history.php'>&nbsp;&nbsp;>&nbsp;History</option>
+										<option value='/community_players_kom.php'>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;Kuski of month</option>
+										<option value='/community_players_honored.php'>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;Honored</option>
+										<option value='/team'>&nbsp;&nbsp;>&nbsp;Teams</option>
+										<option value='/community_teams_hof.php'>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;Hall of fame</option>
+										<option value='/city'>&nbsp;&nbsp;>&nbsp;Cities</option>
+										<option value='/nat'>&nbsp;&nbsp;>&nbsp;Nations</option>
+										<option value='/community_meetings.php'>&nbsp;&nbsp;>&nbsp;Meetings</option>
+										<option value='/community_gaa.php'>&nbsp;&nbsp;>&nbsp;GAA</option>
+										<option value='/community_gaa_2003.php'>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;Year 2003</option>
+										<option value='/community_gaa_2004.php'>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;Year 2004</option>
+										<option value='/community_gaa_2005.php'>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;Year 2005</option>
+										<option value='/community_gaa_2006.php'>&nbsp;&nbsp;&nbsp;&nbsp;>&nbsp;Year 2006</option>
+										<option value='/community_irc.php'>&nbsp;&nbsp;>&nbsp;IRC</option>
+										<option value='/community_links.php'>&nbsp;&nbsp;>&nbsp;Links</option>
+										<option class="main" value='/stuff.php'>>&nbsp;Stuff</option>
+										<option value='/stuff_audio.php'>&nbsp;&nbsp;>&nbsp;Audio</option>
+										<option value='/stuff_video.php'>&nbsp;&nbsp;>&nbsp;Video</option>
+										<option value='/stuff_texts.php'>&nbsp;&nbsp;>&nbsp;Texts</option>
+										<option value='/stuff_programs.php'>&nbsp;&nbsp;>&nbsp;Programs</option>
+										<option value='/stuff_randomness.php'>&nbsp;&nbsp;>&nbsp;Randomness</option>
+										<option class="main" value='/mopolauta'>>&nbsp;Mopolauta</option>
+										<option value='/
+'>>&nbsp;</option>
+									</select>
+
+									<!--  <input tabindex='7' id="redirect" type="submit" value=">" class="noBR ieBug3" />-->
+
+								</div>
+								</form>
+                                                                
+
+
+
+							</div>	
+							<div class="FrameHead">
+                            	<hr class="hide" />
+															<div class="rfloat">
+								<span class="hide pointer" id="up5" onclick="document.getElementById('up5').style.display='none'; document.getElementById('shortcutsBox').style.display='none'; document.getElementById('down5').style.display='block'">-</span>
+								<span class="block pointer" id="down5" onclick="document.getElementById('up5').style.display='block'; document.getElementById('shortcutsBox').style.display='block'; document.getElementById('down5').style.display='none'">+</span>
+								</div>								<h2><span class="notChar">&not;</span> Shortcuts</h2>
+
+								</div>
+								<div class="columnContent hide" id="shortcutsBox">
+								<ul class="list font2">
+									<li class="font2"><a href="records_elma_wrs.php">World Records</a></li>
+									<li class="font2"><a href="records.php?m=tt">Total times</a></li>
+								</ul>
+
+							</div>
+							<div class="FrameHead">
+                                                        
+                            	<hr class="hide" />
+															<div class="rfloat">
+								<span class="block pointer" id="up6" onclick="document.getElementById('up6').style.display='none'; document.getElementById('headlinesBox').style.display='none'; document.getElementById('down6').style.display='block'">-</span>
+								<span class="hide pointer" id="down6" onclick="document.getElementById('up6').style.display='block'; document.getElementById('headlinesBox').style.display='block'; document.getElementById('down6').style.display='none'">+</span>
+								</div>								<h2><span class="notChar">&not;</span> <a class="ColumnHeading" href="/news.php?id=newslist" title="The newest News headlines">Headlines</a></h2>
+
+								</div>
+								<div class="columnContent" id="headlinesBox">
+								<ul class="list font2">
+<li class='font2'><a href='/news_comments.php?newsid=2062'>WRs #419</a></li>
+<li class='font2'><a href='/news_comments.php?newsid=2061'>Cream Pie Cup #1 (video)</a></li>
+<li class='font2'><a href='/news_comments.php?newsid=2060'>Across WR Table #431</a></li>
+<li class='font2'><a href='/news_comments.php?newsid=2059'>Across WR Table #430</a></li>
+<li class='font2'><a href='/news_comments.php?newsid=2058'>Two old Across WR tables found from 1997-1998</a></li>
+<li class='font2'><a href='/news_comments.php?newsid=2057'>Across WR Table #429</a></li>
+<li class='font2'><a href='/news_comments.php?newsid=2056'>Players and Cheating pages hidden</a></li>
+<li class='font2'><a href='/news_comments.php?newsid=2055'>Across WR Table #428</a></li>
+<li class='font2'><a href='/news_comments.php?newsid=2054'>WRs #418</a></li>
+<li class='font2'><a href='/news_comments.php?newsid=2053'>c64 elma</a></li>
+								
+                                                                </ul>
+
+							</div>
+							<div class="FrameHead">
+
+								<hr class="hide" />
+																<div class="rfloat">
+								<span class="block pointer" id="up7" onclick="document.getElementById('up7').style.display='none'; document.getElementById('searchBox').style.display='none'; document.getElementById('down7').style.display='block'">-</span>
+								<span class="hide pointer" id="down7" onclick="document.getElementById('up7').style.display='block'; document.getElementById('searchBox').style.display='block'; document.getElementById('down7').style.display='none'">+</span>
+								</div>								<h2><span class="notChar">&not;</span> <a class="ColumnHeading" title="Advanced search">Search</a></h2>
+								</div>
+								<div class="columnContent" id="searchBox">
+
+								<form method="post" action="">
+								<div class="centered">
+									<input accesskey="4" size="15" type="text" name="search" /> <!-- <input class="noBR ieBug3" type="submit" value=">" />-->
+								</div>
+								<div class="centered">
+									<!--<label for="rec">Rec</label><input id="rec" class="ieBug" type="checkbox" name="rec" disabled="disabled" />-->
+									<label for="file">File</label><input id="file" class="ieBug"  type="checkbox" name="file" disabled="disabled" />
+									<label for="player">Community</label><input id="player" class="ieBug"  type="checkbox" name="kuski" checked="checked" />
+								</div>	
+								</form>
+
+								<h4 class="space"><a title="Not available">Advanced search</a> - <a href="http://www.google.com/search?as_sitesearch=www.moposite.com">Google</a></h4>
+
+							</div>
+							
+						</div>
+
+						<hr class="hide" />
+
+					</div>
+				</div>
+			</div>
+			<div id="rightColumn" >
+	
+				<div class="inside">
+					<div class="vnav">
+
+						                        <div class="FrameHead">
+
+							<h2><span class="notChar">&not;</span> Information</h2>
+				
+						</div>
+						<div class="columnContent">
+
+                        	<p class="para">Moposite hosts only single players' WR table. The multi player list is at <a class="external" title="External link" href="http://stats.sshoyer.net/multiwr/multiwr.html" rel="external">SveinR's site</a>.</p>
+						
+						</div>
+						<div class="FrameHead">
+
+							<h2><span class="notChar">&not;</span> Old Tables</h2>
+				
+						</div>
+						<div class="columnContent">
+							<div class="centered">
+							<form method="get" action="">
+			                        	<select name="table" class="menu">
+								<option value='1'>1</option><option value='2'>2</option><option value='3'>3</option><option value='4'>4</option><option value='5'>5</option><option value='6'>6</option><option value='7'>7</option><option value='8'>8</option><option value='9'>9</option><option value='10'>10</option><option value='11'>11</option><option value='12'>12</option><option value='13'>13</option><option value='14'>14</option><option value='15'>15</option><option value='16'>16</option><option value='17'>17</option><option value='18'>18</option><option value='19'>19</option><option value='20'>20</option><option value='21'>21</option><option value='22'>22</option><option value='23'>23</option><option value='24'>24</option><option value='25'>25</option><option value='26'>26</option><option value='27'>27</option><option value='28'>28</option><option value='29'>29</option><option value='30'>30</option><option value='31'>31</option><option value='32'>32</option><option value='33'>33</option><option value='34'>34</option><option value='35'>35</option><option value='36'>36</option><option value='37'>37</option><option value='38'>38</option><option value='39'>39</option><option value='40'>40</option><option value='41'>41</option><option value='42'>42</option><option value='43'>43</option><option value='44'>44</option><option value='45'>45</option><option value='46'>46</option><option value='47'>47</option><option value='48'>48</option><option value='49'>49</option><option value='50'>50</option><option value='51'>51</option><option value='52'>52</option><option value='53'>53</option><option value='54'>54</option><option value='55'>55</option><option value='56'>56</option><option value='57'>57</option><option value='58'>58</option><option value='59'>59</option><option value='60'>60</option><option value='61'>61</option><option value='62'>62</option><option value='63'>63</option><option value='64'>64</option><option value='65'>65</option><option value='66'>66</option><option value='67'>67</option><option value='68'>68</option><option value='69'>69</option><option value='70'>70</option><option value='71'>71</option><option value='72'>72</option><option value='73'>73</option><option value='74'>74</option><option value='75'>75</option><option value='76'>76</option><option value='77'>77</option><option value='78'>78</option><option value='79'>79</option><option value='80'>80</option><option value='81'>81</option><option value='82'>82</option><option value='83'>83</option><option value='84'>84</option><option value='85'>85</option><option value='86'>86</option><option value='87'>87</option><option value='88'>88</option><option value='89'>89</option><option value='90'>90</option><option value='91'>91</option><option value='92'>92</option><option value='93'>93</option><option value='94'>94</option><option value='95'>95</option><option value='96'>96</option><option value='97'>97</option><option value='98'>98</option><option value='99'>99</option><option value='100'>100</option><option value='101'>101</option><option value='102'>102</option><option value='103'>103</option><option value='104'>104</option><option value='105'>105</option><option value='106'>106</option><option value='107'>107</option><option value='108'>108</option><option value='109'>109</option><option value='110'>110</option><option value='111'>111</option><option value='112'>112</option><option value='113'>113</option><option value='114'>114</option><option value='115'>115</option><option value='116'>116</option><option value='117'>117</option><option value='118'>118</option><option value='119'>119</option><option value='120'>120</option><option value='121'>121</option><option value='122'>122</option><option value='123'>123</option><option value='124'>124</option><option value='125'>125</option><option value='126'>126</option><option value='127'>127</option><option value='128'>128</option><option value='129'>129</option><option value='130'>130</option><option value='131'>131</option><option value='132'>132</option><option value='133'>133</option><option value='134'>134</option><option value='135'>135</option><option value='136'>136</option><option value='137'>137</option><option value='138'>138</option><option value='139'>139</option><option value='140'>140</option><option value='141'>141</option><option value='142'>142</option><option value='143'>143</option><option value='144'>144</option><option value='145'>145</option><option value='146'>146</option><option value='147'>147</option><option value='148'>148</option><option value='149'>149</option><option value='150'>150</option><option value='151'>151</option><option value='152'>152</option><option value='153'>153</option><option value='154'>154</option><option value='155'>155</option><option value='156'>156</option><option value='157'>157</option><option value='158'>158</option><option value='159'>159</option><option value='160'>160</option><option value='161'>161</option><option value='162'>162</option><option value='163'>163</option><option value='164'>164</option><option value='165'>165</option><option value='166'>166</option><option value='167'>167</option><option value='168'>168</option><option value='169'>169</option><option value='170'>170</option><option value='171'>171</option><option value='172'>172</option><option value='173'>173</option><option value='174'>174</option><option value='175'>175</option><option value='176'>176</option><option value='177'>177</option><option value='178'>178</option><option value='179'>179</option><option value='180'>180</option><option value='181'>181</option><option value='182'>182</option><option value='183'>183</option><option value='184'>184</option><option value='185'>185</option><option value='186'>186</option><option value='187'>187</option><option value='188'>188</option><option value='189'>189</option><option value='190'>190</option><option value='191'>191</option><option value='192'>192</option><option value='193'>193</option><option value='194'>194</option><option value='195'>195</option><option value='196'>196</option><option value='197'>197</option><option value='198'>198</option><option value='199'>199</option><option value='200'>200</option><option value='201'>201</option><option value='202'>202</option><option value='203'>203</option><option value='204'>204</option><option value='205'>205</option><option value='206'>206</option><option value='207'>207</option><option value='208'>208</option><option value='209'>209</option><option value='210'>210</option><option value='211'>211</option><option value='212'>212</option><option value='213'>213</option><option value='214'>214</option><option value='215'>215</option><option value='216'>216</option><option value='217'>217</option><option value='218'>218</option><option value='219'>219</option><option value='220'>220</option><option value='221'>221</option><option value='222'>222</option><option value='223'>223</option><option value='224'>224</option><option value='225'>225</option><option value='226'>226</option><option value='227'>227</option><option value='228'>228</option><option value='229'>229</option><option value='230'>230</option><option value='231'>231</option><option value='232'>232</option><option value='233'>233</option><option value='234'>234</option><option value='235'>235</option><option value='236'>236</option><option value='237'>237</option><option value='238'>238</option><option value='239'>239</option><option value='240'>240</option><option value='241'>241</option><option value='242'>242</option><option value='243'>243</option><option value='244'>244</option><option value='245'>245</option><option value='246'>246</option><option value='247'>247</option><option value='248'>248</option><option value='249'>249</option><option value='250'>250</option><option value='251'>251</option><option value='252'>252</option><option value='253'>253</option><option value='254'>254</option><option value='255'>255</option><option value='256'>256</option><option value='257'>257</option><option value='258'>258</option><option value='259'>259</option><option value='260'>260</option><option value='261'>261</option><option value='262'>262</option><option value='263'>263</option><option value='264'>264</option><option value='265'>265</option><option value='266'>266</option><option value='267'>267</option><option value='268'>268</option><option value='269'>269</option><option value='270'>270</option><option value='271'>271</option><option value='272'>272</option><option value='273'>273</option><option value='274'>274</option><option value='275'>275</option><option value='276'>276</option><option value='277'>277</option><option value='278'>278</option><option value='279'>279</option><option value='280'>280</option><option value='281'>281</option><option value='282'>282</option><option value='283'>283</option><option value='284'>284</option><option value='285'>285</option><option value='286'>286</option><option value='287'>287</option><option value='288'>288</option><option value='289'>289</option><option value='290'>290</option><option value='291'>291</option><option value='292'>292</option><option value='293'>293</option><option value='294'>294</option><option value='295'>295</option><option value='296'>296</option><option value='297'>297</option><option value='298'>298</option><option value='299'>299</option><option value='300'>300</option><option value='301'>301</option><option value='302'>302</option><option value='303'>303</option><option value='304'>304</option><option value='305'>305</option><option value='306'>306</option><option value='307'>307</option><option value='308'>308</option><option value='309'>309</option><option value='310'>310</option><option value='311'>311</option><option value='312'>312</option><option value='313'>313</option><option value='314'>314</option><option value='315'>315</option><option value='316'>316</option><option value='317'>317</option><option value='318'>318</option><option value='319'>319</option><option value='320'>320</option><option value='321'>321</option><option value='322'>322</option><option value='323'>323</option><option value='324'>324</option><option value='325'>325</option><option value='326'>326</option><option value='327'>327</option><option value='328'>328</option><option value='329'>329</option><option value='330'>330</option><option value='331'>331</option><option value='332'>332</option><option value='333'>333</option><option value='334'>334</option><option value='335'>335</option><option value='336'>336</option><option value='337'>337</option><option value='338'>338</option><option value='339'>339</option><option value='340'>340</option><option value='341'>341</option><option value='342'>342</option><option value='343'>343</option><option value='344'>344</option><option value='345'>345</option><option value='346'>346</option><option value='347'>347</option><option value='348'>348</option><option value='349'>349</option><option value='350'>350</option><option value='351'>351</option><option value='352'>352</option><option value='353'>353</option><option value='354'>354</option><option value='355'>355</option><option value='356'>356</option><option value='357'>357</option><option value='358'>358</option><option value='359'>359</option><option value='360'>360</option><option value='361'>361</option><option value='362'>362</option><option value='363'>363</option><option value='364'>364</option><option value='365'>365</option><option value='366'>366</option><option value='367'>367</option><option value='368'>368</option><option value='369'>369</option><option value='370'>370</option><option value='371'>371</option><option value='372'>372</option><option value='373'>373</option><option value='374'>374</option><option value='375'>375</option><option value='376'>376</option><option value='377'>377</option><option value='378'>378</option><option value='379'>379</option><option value='380'>380</option><option value='381'>381</option><option value='382'>382</option><option value='383'>383</option><option value='384'>384</option><option value='385'>385</option><option value='386'>386</option><option value='387'>387</option><option value='388'>388</option><option value='389'>389</option><option value='390'>390</option><option value='391'>391</option><option value='392'>392</option><option value='393'>393</option><option value='394'>394</option><option value='395'>395</option><option value='396'>396</option><option value='397'>397</option><option value='398'>398</option><option value='399'>399</option><option value='400'>400</option><option value='401'>401</option><option value='402'>402</option><option value='403'>403</option><option value='404'>404</option><option value='405'>405</option><option value='406'>406</option><option value='407'>407</option><option value='408'>408</option><option value='409'>409</option><option value='410'>410</option><option value='411'>411</option><option value='412'>412</option><option value='413'>413</option><option value='414'>414</option><option value='415'>415</option><option value='416'>416</option><option value='417'>417</option><option value='418'>418</option><option value='419' selected="selected" >419</option>							</select>
+							<input type="submit" value="Select" /><br />
+							<p class="para centered">
+								
+														<a href="records_elma_wrs.php?table=418">&lt; Prev</a>
+																					</p>
+							</form>
+							</div>
+						</div>
+
+						<div class="FrameHead">
+
+							<h2><span class="notChar">&not;</span> Submit times</h2>
+				
+						</div>
+						<div class="columnContent">
+
+<p>All times must be driven in the online mode of <a  href="http://beta.elmaonline.net/">Elma Online</a>.</p>
+
+<p>In order to get your time on the table, you need to email the replay (.rec) file and the state.dat file to <img class='margin5' src="/scripts/emailimg.php?style=3&amp;mail=cGV4aUBtb3Bvc2l0ZS5jb20=" alt="pexi cFROMc moposite cDOTc com" title="pexi cFROMc moposite cDOTc com" />. Remember to tell us your nick, nationality, possible team and of course the time of the ride. Please compress the files to a single .zip file.</p>
+
+<p>The deadline for the usual weekly Sunday update is Saturday 23:59 EET.</p>
+
+<p>You can also upload the state.dat file via the Records system but you still need to email the .rec file with the above-specified info to the email address above.</p>
+
+<p>In case of equal times, the time submitted first is granted on the table.</p>
+
+<p class="para">By submitting replay files you agree that the files may be published later in the future, although not sooner than five (5) years after submitting the files.</p>
+
+						</div>
+
+						<div class="FrameHead">
+
+							<h2><span class="notChar">&not;</span> Logos</h2>
+				
+						</div>
+						<div class="columnContent">
+
+                        	<p class="para">If you want to have a team logo instead of plain link to teampage, send it with your record. Note that if your team already has one or more logos on the WR table, you don't need to send the logo with your new WRs. Maximum size for logos is 40*20 pixels and 4096 bytes. Logos must be in gif format.</p>
+
+						</div>
+
+						<div class="FrameHead">
+
+							<h2><span class="notChar">&not;</span> Statistics</h2>
+				
+						</div>
+						<div class="columnContent">
+
+                        	<p class="para"><a href="records_wr_statistics.php">Here.</a></p>
+
+						</div>
+
+						
+					</div>
+
+					<hr class="hide" />
+
+				</div>
+			</div>
+			<div class="clear mozclear">
+			</div>
+		</div>
+		<!--<div id="Flags">
+			
+			<span class="hide">Choose language:</span>
+			<a title="suomeksi" href="/info_moposite_languages.php?language=FIN"><img class="flag" src="/images/flags/FIN_small.gif" alt="suomeksi" /></a>
+			<a title="magyarul" href="/info_moposite_languages.php?language=HUN"><img class="flag" src="/images/flags/HUN_small.gif" alt="magyarul" /></a>
+			<a title="&#1489;&#1506;&#1489;&#1512;&#1497;&#1514;" href="/info_moposite_languages.php?language=ISR"><img class="flag" src="/images/flags/ISR_small.gif" alt="&#1489;&#1506;&#1489;&#1512;&#1497;&#1514;" /></a>
+			<a title="cesky" href="/info_moposite_languages.php?language=CZE"><img class="flag" src="/images/flags/CZE_small.gif" alt="cesky" /></a>
+			<a title="p&aring; svenska" href="/info_moposite_languages.php?language=SWE"><img class="flag" src="/images/flags/SWE_small.gif" alt="p&aring; svenska" /></a>
+			<a title="auf Deutsch" href="/info_moposite_languages.php?language=GER"><img class="flag" src="/images/flags/GER_small.gif" alt="auf Deutsch" /></a>
+			<a title="en espa&ntilde;ol" href="/info_moposite_languages.php?language=SPA"><img class="flag" src="/images/flags/SPA_small.gif" alt="en espa&ntilde;ol" /></a>
+			<a title="p&aring; norsk" href="/info_moposite_languages.php?language=NOR"><img class="flag" src="/images/flags/NOR_small.gif" alt="p&aring; norsk" /></a>
+			<a title="p&aring; dansk" href="/info_moposite_languages.php?language=DEN"><img class="flag" src="/images/flags/DEN_small.gif" alt="p&aring; dansk" /></a>
+			<a title="in het Nederlands" href="/info_moposite_languages.php?language=NED"><img class="flag" src="/images/flags/NED_small.gif" alt="in het Nederlands" /></a>
+			<a title="en fran&ccedil;ais" href="/info_moposite_languages.php?language=FRA"><img class="flag" src="/images/flags/FRA_small.gif" alt="en fran&ccedil;ais" /></a>
+			<a title="&#1087;&#1086; &#1088;&#1091;&#1089;&#1089;&#1082;&#1080;" href="/info_moposite_languages.php?language=RUS"><img class="flag" src="/images/flags/RUS_small.gif" alt="&#1087;&#1086; &#1088;&#1091;&#1089;&#1089;&#1082;&#1080;" /></a>
+			<a title="po polsku" href="/info_moposite_languages.php?language=POL"><img class="flag" src="/images/flags/POL_small.gif" alt="po polsku" /></a>
+			<a title="em portugu&#0234;s" href="/info_moposite_languages.php?language=POR"><img class="flag" src="/images/flags/POR_small.gif" alt="em portugu&#0234;s" /></a>
+
+		</div>-->
+	</div>
+	<div id="footer" class="inside">
+		<div id="validators">
+			
+			<a name="Bottom"></a>
+			<p class="hide"></p><span class="hide">Valid: </span><a href="http://validator.w3.org/check?uri=referer">XHTML 1.0</a> <a href="http://jigsaw.w3.org/css-validator/check/referer">CSS2</a><p class="hide"></p>
+
+		</div>
+		<div>
+		
+			Last modification: 17. Dec 2016, 10:20 <glo>UTC</glo>.
+			Page generation in 0.0872 seconds.
+		</div>
+		<div>
+
+			<a href="/info_moposite_contacts.php" accesskey="9">Contacts</a> -
+			<a href="http://mopolauta.moposite.com" accesskey="5">Mopolauta</a> -
+                        <a title="Page: Information - Help" href="/info_help.php">Help</a> -
+			<a title="Page: Information - Moposite - Credits" href="/info_moposite_credits.php">Credits</a> -
+                        <a title="Page: Information - Moposite - Site map" href="/info_moposite_site_map.php">Site map</a>	
+		</div>
+		<div>
+
+			Copyright &copy; 1998-2022. All rights reserved.
+		
+		</div>
+
+		<hr class="hide" />
+
+    </div> 
+</div>
+
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-10351274-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>

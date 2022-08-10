@@ -1,0 +1,108 @@
+a:link {text-decoration: underline; color: #000000;}
+a:visited {text-decoration: underline; color: #000000;}
+a:active {text-decoration: underline; color: #000000;}
+a:hover {text-decoration: none; color: #000000;}
+a.ntime:link {text-decoration: none; color: #222222;}
+a.ntime:visited {text-decoration: none; color: #222222;}
+a.ntime:active {text-decoration: none; color: #222222;}
+a.ntime:hover {text-decoration: none; color: #444444;}
+a.ltime:link {text-decoration: none; color: #00CC00;}
+a.ltime:visited {text-decoration: none; color: #00CC00;}
+a.ltime:active {text-decoration: none; color: #00CC00;}
+a.ltime:hover {text-decoration: none; color: #00EE00;}
+
+body {
+  background-color: #4A658A;
+  color: #000000;
+}
+
+#ahead a:link {text-decoration: none; color: #C2BA3E;}
+#ahead a:visited {text-decoration: none; color: #C2BA3E;}
+#ahead a:active {text-decoration: none; color: #C2BA3E;}
+#ahead a:hover {text-decoration: none; color: #FFFFFF;}
+div#ahead {color: #C2BA3E;}
+
+#main {
+  border: 1px solid #000000;
+  background-color: #56784E;
+}
+
+a.header {
+  border: 1px solid #000000;
+  background-image: url("img/header_mopo.png");
+}
+
+#left {
+  border: 1px solid #000000;
+  background-color: #446A3A;
+}
+
+#mid {
+  border: 1px solid #000000; 
+}
+
+.menuheader {
+  border: 1px solid #000000;
+  background-color: #3A5E32;
+}
+
+table.times {
+  border-style: solid;
+  border-color: #000000;
+  background-color: #628959;
+}
+th.times {
+  border-style: solid;
+  border-color: #3A5E32;
+  background-color: #5B7F52;
+}
+td.times {
+  border-style: solid;
+  border-color: #3A5E32;
+}
+
+.box {
+  border: 1px solid #000000;
+  background-color: #628959;
+}
+
+.box2 {
+  border: 1px solid #000000;
+  background-color: #628959;
+}
+
+input, select, option, textarea {
+  background-color: #649557;
+}                        
+input, textarea {
+  border: 1px solid #000;
+}     
+input:hover, textarea:hover {
+  border-bottom: 1px #87B27C solid;
+  border-right: 1px #87B27C solid;
+}                           
+input:focus, textarea:focus {
+  background-color: #87B27C;
+  border: 1px solid #000;
+}
+
+/****tabber stuff****/
+
+ul.tabbernav {
+  border-bottom: 1px solid #000000;
+}
+
+ul.tabbernav li a {
+  border: 1px solid #000000;
+  background-color: #628959;
+}
+
+ul.tabbernav li.tabberactive a {
+  border-bottom: 1px solid #628959;
+  background-color: #628959;
+}
+
+.tabberlive .tabbertab {
+  border: 1px solid #000000;
+  background-color: #628959;
+}
