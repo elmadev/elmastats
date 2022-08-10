@@ -1,6 +1,6 @@
 <?php include("top.php"); ?>
 <?php
-  if ($_SESSION["nick"] === "Labs" || $_SESSION["nick"] === "Kopaka") {
+  if (in_array($_SESSION["nick"], $admins)) {
     $admnick = $_GET["nick"];
     $admnuser = $users[$admnick];
     if (isset($admnick) && isset($admnuser)) {

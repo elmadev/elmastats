@@ -103,8 +103,9 @@
   }
 
   //update user if changed in adm.php
+  $admins = array("Labs", "Kopaka", "Arzenik");
   if (endsWith($_SERVER["PHP_SELF"], "adm.php")) {
-    if (sizeof($_POST) > 0 && ($_SESSION["nick"] === "Labs" || $_SESSION["nick"] === "Kopaka")) {
+    if (sizeof($_POST) > 0 && in_array($_SESSION["nick"], $admins)) {
       $adm_acc_status .= "<br/>";
       $error = false;
       if ($_POST["pwd"] != $_POST["pwd2"] && $_POST["pwd"] != "") {
