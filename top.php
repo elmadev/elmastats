@@ -214,11 +214,11 @@
 <a class="header" href="index.php"></a>
 <div id="ads">
   <?php //add mopolauta link elmastatssdfsdf ?>
-  <a href="https://elma.online/cup/WC8/" target="_blank">World Cup 8</a> /
+  <a href="https://elma.online/cup/WC9/" target="_blank">World Cup 9</a> /
   <a href="http://www.moposite.com/records_elma_wrs.php" target="_blank">Latest wr table</a> /
   <a href="http://elma.online" target="_blank">Elma Online</a> /
   <a href="http://mopolauta.moposite.com/" target="_blank">mopolauta</a> /
-  <a href="http://stats.sshoyer.net/multiwr" target="_blank">Internal multi wr</a>
+  <a href="https://multiwr.elma.online/" target="_blank">Internal multi wr</a>
 </div>
 <div id="left">
 <?php if (isset($_SESSION["nick"])) { ?>
