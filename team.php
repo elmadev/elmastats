@@ -62,14 +62,16 @@
       $teamtt += $trtajm;
       $victories[$trman] += 1;
       for ($y = 0;$y < $c;$y++) {
+        
+        $t = target($utimes[$x+1][1], $x+1);
         $bulle = ""; $bulle2 = "";
-        if ($trman == $y) { $bulle = "<span style=\"color: #00AA00\">"; $bulle2 = "</span>"; }
+        if ($trman == $y) { $bulle = "<span style=\"font-weight: bold\">"; $bulle2 = "</span>"; }
         if ($trtajm > $utimes[$y][$x+1][1]) { $wry = "-"; } else { $wry = "+"; }
         $diff2 = abs($utimes[$y][$x+1][1]-$trtajm);
         $str = $wry . formatElmaTime($diff2) . " to " . $dudes[$trman] . "'s time";
         if ($y == $trman || $trman == -1) $str = "";
         //echo("<td class=\"times\" title=\"" . $str . "\"><center>" . $bulle . formatElmaTime($utimes[$y][$x+1][1], true) . $bulle2 . "</center></td>");
-        echo("<td class=\"times\" title=\"" . $str . "\"><center>" . $bulle . sttime($dudes[$y], $x+1, $utimes[$y][$x+1][1], true, $trman == $y ? true : false) . $bulle2 . "</center></td>");
+        echo("<td class=\"times\" title=\"" . $str . "\"><center>" . $bulle . sttime($dudes[$y], $x+1, $utimes[$y][$x+1][1], true, $trman == $y ? true : false, $t) . $bulle2 . "</center></td>");
       }
       echo("</tr>");
     }
