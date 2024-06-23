@@ -193,7 +193,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title>elmastats</title>
-<link href="<?php
+<link href="css/<?php
 
   if (isset($_SESSION["nick"])) {
     echo($users[$_SESSION["nick"]]["theme"] . ".css");
@@ -204,7 +204,7 @@
   //<a href="https://www.youtube.com/watch?v=jl4d2IVBXPU">restore old theme tutorial</a>
   echo("?" . time());
 ?>" rel="stylesheet" type="text/css"/>
-<link href="hi.css?<?php echo(time()); ?>" rel="stylesheet" type="text/css"/>
+<link href="css/hi.css?<?php echo(time()); ?>" rel="stylesheet" type="text/css"/>
 <link rel="shortcut icon" href="favicon.ico"/>
 <script type="text/javascript" src="tabber.js"></script>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
