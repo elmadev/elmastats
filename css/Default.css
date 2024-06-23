@@ -45,8 +45,6 @@ table.times {
   border-style: solid;
   border-color: #000000;
   background-color: #303030;
-  max-width: 720px;
-  overflow-x: auto;
 }
 th.times {
   border-style: dotted;
