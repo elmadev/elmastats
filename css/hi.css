@@ -58,7 +58,10 @@ a.header {
   margin: 8px 0px 0px 180px;
   padding: 10px 10px 10px 10px;
   width: 798px;
-  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #404040 #202020;
 }
 
 .menuheader {
