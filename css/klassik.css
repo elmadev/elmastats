@@ -23,7 +23,7 @@ body {
 
 a.header {
   border: 1px solid #AAAAAA;
-  background-image: url("img/header_klassik.png");
+  background-image: url("../img/header_klassik.png");
 }
 
 #left {

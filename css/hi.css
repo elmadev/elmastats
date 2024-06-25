@@ -2,22 +2,41 @@ a.ttime0:link {text-decoration: none; color: #FF0000;}
 a.ttime0:visited {text-decoration: none; color: #FF0000;}
 a.ttime0:active {text-decoration: none; color: #FF0000;}
 a.ttime0:hover {text-decoration: none; color: #FF5555;}
-a.ttime1:link {text-decoration: none; color: #FF9C00;}
-a.ttime1:visited {text-decoration: none; color: #FF9C00;}
-a.ttime1:active {text-decoration: none; color: #FF9C00;}
-a.ttime1:hover {text-decoration: none; color: #FFB238;}
-a.ttime2:link {text-decoration: none; color: #FFF200;}
-a.ttime2:visited {text-decoration: none; color: #FFF200;}
-a.ttime2:active {text-decoration: none; color: #FFF200;}
-a.ttime2:hover {text-decoration: none; color: #FFF97B;}
-a.ttime3:link {text-decoration: none; color: #00FF00;}
-a.ttime3:visited {text-decoration: none; color: #00FF00;}
-a.ttime3:active {text-decoration: none; color: #00FF00;}
-a.ttime3:hover {text-decoration: none; color: #75FF75;}
-a.ttime4:link {text-decoration: none; color: #0090FF;}
-a.ttime4:visited {text-decoration: none; color: #0090FF;}
-a.ttime4:active {text-decoration: none; color: #0090FF;}
-a.ttime4:hover {text-decoration: none; color: #52B4FF;}
+
+a.ttime1:link {text-decoration: none; color: #AA43DD;}
+a.ttime1:visited {text-decoration: none; color: #AA43DD;}
+a.ttime1:active {text-decoration: none; color: #AA43DD;}
+a.ttime1:hover {text-decoration: none; color: #BB54EE;}
+
+a.ttime2:link {text-decoration: none; color: #FF66CC;}
+a.ttime2:visited {text-decoration: none; color: #FF66CC;}
+a.ttime2:active {text-decoration: none; color: #FF66CC;}
+a.ttime2:hover {text-decoration: none; color: #FF8FDA;}
+
+a.ttime3:link {text-decoration: none; color: #FF9C00;}
+a.ttime3:visited {text-decoration: none; color: #FF9C00;}
+a.ttime3:active {text-decoration: none; color: #FF9C00;}
+a.ttime3:hover {text-decoration: none; color: #FFB238;}
+
+a.ttime4:link {text-decoration: none; color: #FFF200;}
+a.ttime4:visited {text-decoration: none; color: #FFF200;}
+a.ttime4:active {text-decoration: none; color: #FFF200;}
+a.ttime4:hover {text-decoration: none; color: #FFF97B;}
+
+a.ttime5:link {text-decoration: none; color: #00FF00;}
+a.ttime5:visited {text-decoration: none; color: #00FF00;}
+a.ttime5:active {text-decoration: none; color: #00FF00;}
+a.ttime5:hover {text-decoration: none; color: #75FF75;}
+
+a.ttime6:link {text-decoration: none; color: #0090FF;}
+a.ttime6:visited {text-decoration: none; color: #0090FF;}
+a.ttime6:active {text-decoration: none; color: #0090FF;}
+a.ttime6:hover {text-decoration: none; color: #52B4FF;}
+
+a.ttime7:link {text-decoration: none; color: #F3F5CA;}
+a.ttime7:visited {text-decoration: none; color: #F3F5CA;}
+a.ttime7:active {text-decoration: none; color: #F3F5CA;}
+a.ttime7:hover {text-decoration: none; color: #F3F5CA;}
 
 body {
   font-family:monospace,courier new;
@@ -58,7 +77,10 @@ a.header {
   margin: 8px 0px 0px 180px;
   padding: 10px 10px 10px 10px;
   width: 798px;
-  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #404040 #202020;
 }
 
 .menuheader {
@@ -106,6 +128,7 @@ td.times {
 .box2 {
   padding: 5px 5px 5px 5px;
   overflow: hidden;
+  background-color: #333333;
 }
 
 .ubwrap {

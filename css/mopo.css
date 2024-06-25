@@ -29,7 +29,7 @@ div#ahead {color: #C2BA3E;}
 
 a.header {
   border: 1px solid #000000;
-  background-image: url("img/header_mopo.png");
+  background-image: url("../img/header_mopo.png");
 }
 
 #left {
