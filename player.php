@@ -213,6 +213,7 @@
       echo("<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\">");
       $i = 0;
       foreach ($users as $dItem) {
+        if ($dItem["nick"] == '!.gitignore' || $dItem["nick"] == '*') { continue; }
         if ($dItem["nick"] != "" && $dItem["nick"] != $cItem["nick"]) {
           if ($i == 0) echo("<tr>");
           $t = "";
