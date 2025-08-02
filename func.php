@@ -455,7 +455,11 @@
   }
 
   function cmpa($a, $b) {
-    $s = strcmp(strtolower($a["nick"]), strtolower($b["nick"]));
+    if (is_array($a) && is_array($b) && isset($a["nick"], $b["nick"])) {
+      $s = strcmp(strtolower($a["nick"]), strtolower($b["nick"]));
+    } else {
+      $s = 0;
+    }
     if ($s == 0 && strlen($a) > 1 && strlen($b) > 1) return cmpa(substr($a, 1), substr($b, 1));
     return ($s == 0 ? 0 : ($s < 0 ? -1 : 1));
   }
