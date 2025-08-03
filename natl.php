@@ -54,9 +54,13 @@
 
     echo("<table>");
     foreach ($nc as $nk => $n) {
-      echo("<tr><td width=\"200px\">");
-      echo(flag($nk) . " <a href=\"natl.php?country=" . $nk . "\">" . $cnames[strtoupper($nk)] . "</a><br/>");
-      echo("</td><td>" . $n . " kuski" . ($n == 1 ? "" : "s") . "</td></tr>");
+      if($nk == '!.gitignore') { 
+        continue; }
+      else {
+        echo("<tr><td width=\"200px\">");
+        echo(flag($nk) . " <a href=\"natl.php?country=" . $nk . "\">" . $cnames[strtoupper($nk)] . "</a><br/>");
+        echo("</td><td>" . $n . " kuski" . ($n == 1 ? "" : "s") . "</td></tr>");
+      }
     }
     echo("</table>");
     $eror = true;
