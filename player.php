@@ -80,7 +80,9 @@
         echo("<td class=\"times\"></td>"); // Spacer
         $avg = 0;
         for ($y = 0;$y < 10;$y++) {
-          $avg += ($utimes[$x+1][$y+1] == 0 ? 60000 : $utimes[$x+1][$y+1]);
+          $value = $utimes[$x+1][$y+1] ?? 0;
+          $avg += ($value == 0 ? 60000 : (int)$value);
+          //$avg += ($utimes[$x+1][$y+1] == 0 ? 60000 : $utimes[$x+1][$y+1]);
         }
         $avgtt += $avg;
         $avg = round($avg/10);

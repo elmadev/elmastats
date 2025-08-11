@@ -6,7 +6,7 @@
   error_reporting(0);
 
   if ($_GET["logout"] == 1) {
-    session_unset("nick");
+    session_unset();
     session_destroy();
   }
 

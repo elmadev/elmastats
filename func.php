@@ -550,13 +550,14 @@
     if ($i == 0 && $emptyif0) {
       return "";
     } else {
-      $i = round($i);
+      $i = round((int)$i);
       $hrs = floor($i/360000);
       $min = floor($i/6000);
       $sec = floor($i/100);
       $i -= ($sec*100);
       $sec -= ($min*60);
       $min -= ($hrs*60);
+      $hstr = "";
       if ($hrs > 0) $hstr = $hrs . ":";
 
       $r = "m:s:i";

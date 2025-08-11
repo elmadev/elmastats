@@ -40,7 +40,7 @@
         if ($xTime == 0) {
           $AvgTime += 60000;
         } else {
-          $AvgTime += $xTime;
+          $AvgTime += (int)$xTime;
           $finished++;
         }
       }
