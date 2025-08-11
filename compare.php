@@ -25,6 +25,7 @@
     }
     echo("<optgroup label=\"Players\">");
     foreach ($users as $cItem) {
+      if ($cItem["nick"] == '!.gitignore' || $cItem["nick"] == '*') { continue; }
       if ($cItem["nick"] != "") {
         if ($cItem["nick"] == $dudes[$x]) {
           echo("<option value=\"" . $cItem["nick"] . "\" selected=\"selected\">" . $cItem["nick"] . "</option>");
