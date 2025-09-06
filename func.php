@@ -359,7 +359,7 @@
 
   function target($time, $int) {
     global $targets;
-    if ($time == 0) return 8;
+    if (!$time) return 8;
     //if ($time <= $wrs[$int]) return 0;
     for ($x = 0;$x < 8;$x++) {
       if ($time <= $targets[$int][$x]) return $x;
@@ -539,9 +539,9 @@
   function ttime($tajm) {
     global $timezone, $users;
     if (isset($_SESSION["nick"])) {
-      return $tajm+($timezone*3600)+($users[$_SESSION["nick"]]["timezone"]*3600);
+      return (int)$tajm+($timezone*3600)+($users[$_SESSION["nick"]]["timezone"]*3600);
     } else {
-      return $tajm+($timezone*3600);
+      return (int)$tajm+($timezone*3600);
     }
   }
 

@@ -3,7 +3,7 @@
   //die();
 
   session_start();
-  error_reporting(0);
+  error_reporting(E_ERROR);
 
   if ($_GET["logout"] == 1) {
     session_unset();
