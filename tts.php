@@ -31,7 +31,10 @@
 
       //TT calculations
       $cTime = $utimes[$y][$x+1][1];
-      if (!$cTime) $cTime = 60000;
+
+      // Elma state.dat will input a default time of 10 minutes for uncleared levels, and also overwrite an internal time above 10 minutes with a time of 10 minutes of TT calculation.
+      // These two conditional emulate this behaviour.
+      if (!$cTime || $cTime > 60000) $cTime = 60000;
       $ctt += (int)$cTime;
 
       //Average calculations (and # of times handling)
@@ -51,7 +54,11 @@
     if ($ctt < 60000*54) {
       $cItem["time"] = $ctt;
       $cItem["avgtime"] = $avgtt;
-      $cItem["timediff"] = $avgtt - $ctt;
+      // Prevent users from breaking the Avg/Regular TT difference stat by having less than 540 times logged.
+      if($finished == 540) { 
+        $cItem["timediff"] = $avgtt - $ctt; 
+      }
+      else $cItem["timediff"] = $ctt;
       $cItem["fnsh"] = $finished;
       $tts[] = $cItem;
     }
