@@ -104,8 +104,13 @@
 
   //update user if changed in adm.php
   $admins = array("Labs", "Kopaka", "Arzenik");
+  if (endsWith($_SERVER["PHP_SELF"], "adm.php")
+    && (!isset($_SESSION["nick"]) || !in_array($_SESSION["nick"], $admins, true))) {
+    http_response_code(403);
+    exit("Access denied");
+}
   if (endsWith($_SERVER["PHP_SELF"], "adm.php")) {
-    if (sizeof($_POST) > 0 && in_array($_SESSION["nick"], $admins)) {
+if (isset($_POST["OGnick"]) && in_array($_SESSION["nick"], $admins, true)) {
       $adm_acc_status .= "<br/>";
       $error = false;
       if ($_POST["pwd"] != $_POST["pwd2"] && $_POST["pwd"] != "") {
@@ -252,6 +257,11 @@
   <a href="uprec.php">upload recs</a><br/>
   <a href="acc.php">acc settings</a><br/>
   <a href="up.php?logout=1">log out</a><br/>
+  <?php
+    if (isset($_SESSION["nick"]) && in_array($_SESSION["nick"], $admins, true)) {
+      echo('<a href="adm.php?nick=' . urlencode($_SESSION["nick"]) . '">admin</a><br/>');
+}
+?>
 <?php } else { ?>
   <div class="menuheader"><b>user menu</b></div>
   <a href="up.php">log in</a><br/>
