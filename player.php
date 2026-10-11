@@ -209,26 +209,33 @@
       echo($targetz[8] . " finished time" . $ts . "<br/>");
 
       echo("<br/><br/>");
-      echo("<b>Compare to...</b><br/><br/>");
-      echo("<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\">");
-      $i = 0;
-      foreach ($users as $dItem) {
-        if ($dItem["nick"] == '!.gitignore' || $dItem["nick"] == '*') { continue; }
-        if ($dItem["nick"] != "" && $dItem["nick"] != $cItem["nick"]) {
-          if ($i == 0) echo("<tr>");
-          $t = "";
-          if ($dItem["team"] != "") $t = " [<a href=\"team.php?team=" . fix($dItem["team"]) . "\">" . fix($dItem["team"]) . "</a>]";
-          echo("<td>" . flag($dItem["country"]) . " <a href=\"compare.php?u1=" . $cItem["nick"] . "&amp;u2=" . $dItem["nick"] . "\">" . $dItem["nick"] . "</a>" . $t . "&nbsp;&nbsp;&nbsp;</td>");
-          $i++;
-          if ($i == 4) {
-            $i = 0;
-            echo("</tr>");
-          }
-        }
-      }
-      if ($i != 0) echo("</tr>");
-      echo("</table>");
+echo("<br/><br/><b>Compare to...</b><br/><br/>");
 
+echo('<form action="compare.php" method="get">');
+echo('<input type="hidden" name="u1" value="' .
+     htmlspecialchars($cItem["nick"], ENT_QUOTES, "UTF-8") . '">');
+
+echo('<select name="u2" onchange="this.form.submit()">');
+echo('<option value="">Choose a player...</option>');
+
+$compareUsers = $users;
+uasort($compareUsers, function ($a, $b) {
+  return strcasecmp($a["nick"] ?? "", $b["nick"] ?? "");
+});
+foreach ($compareUsers as $dItem) {
+  $nick = $dItem["nick"] ?? "";
+
+  if ($nick === "" || $nick === $cItem["nick"]
+      || $nick === "!.gitignore" || $nick === "*") {
+    continue;
+  }
+
+  $safeNick = htmlspecialchars($nick, ENT_QUOTES, "UTF-8");
+  echo('<option value="' . $safeNick . '">' . $safeNick . '</option>');
+}
+
+echo('</select>');
+echo('</form>');
 
       echo("<br/><br/>");
       echo("<b>Userbars and stuff</b><br/><br/>");
@@ -243,7 +250,7 @@
       echo("<br/><b>Simpel and customizabel</b><br/>");
       addub("tt.php?u=" . $_GET["player"], $_GET["player"]);
       addub("tt.php?u=" . $_GET["player"] . "&amp;s=TT:%20%5B:tt:%5D&amp;bg=000000&amp;c=FF0000", $_GET["player"]);
-      echo("<br/><b>Belma</b><br/>");
+      echo("<br/><b>Eol</b><br/>");
       addub("bub.php?u=" . $_GET["player"], $_GET["player"]);
       addub("bub.php?u=" . $_GET["player"] . "&amp;s=&lt;" . $_GET["player"] . "&gt;%20hi%20my%20TT%20is%20:tt:%20:D)", $_GET["player"]);
       echo("</div>");
