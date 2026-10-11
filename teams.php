@@ -5,11 +5,14 @@
     $teams[$user["team"]]++;
   }
   
-  function cmpc($a, $b) {
-    if ($a == $b) return 0;
-    return ($a > $b) ? -1 : 1;
-  }
-  uasort($teams, "cmpc");
+  uksort($teams, function ($a, $b) use ($teams) {
+    $countOrder = $teams[$b] <=> $teams[$a];
+    if ($countOrder !== 0) {
+      return $countOrder;
+    }
+
+    return strcasecmp($a, $b);
+  });
     
   echo("<b>Teams (" . count($teams) . ")</b><br/><br/>");
   echo("<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\">");
