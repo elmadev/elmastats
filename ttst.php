@@ -4,6 +4,7 @@
   //  u     user
   //  bg    bg color (b: blue, g: green...)
   
+  ob_start();
   include("func.php");
   addUbCounter();
 
@@ -55,6 +56,7 @@
     imagestring($img, 4, 24, 1, $_GET["u"], $fontcolor);
     imagestring($img, 4, 125, 1, $str, $fontcolor);
   }
+  if (ob_get_length()) ob_clean();
   header("Content-Type: image/png");
   imagepng($img);
   imagedestroy($img);
