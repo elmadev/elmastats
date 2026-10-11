@@ -61,7 +61,7 @@
     
     //colors
     $c_alpha = imagecolorallocate($img, 255, 0, 255);
-    if ($_GET["dark"] != 1) {
+    if (($_GET["dark"] ?? "0") != "1") {
       $c_canv = imagecolorallocate($img, 50, 0, 0);
       $c_line = imagecolorallocate($img, 255, 0, 0);
       $c_line2 = imagecolorallocate($img, 100, 0, 0);
