@@ -46,12 +46,18 @@
     }
     echo("</table>");*/
 
-    function cmpc($a, $b) {
-      if ($a == $b) return 0;
-      return ($a > $b) ? -1 : 1;
+    uksort($nc, function ($a, $b) use ($nc, $cnames) {
+      // More players of same nation goes first.
+      $countOrder = $nc[$b] <=> $nc[$a];
+      if ($countOrder !== 0) {
+      return $countOrder;
     }
-    uasort($nc, "cmpc");
-
+      // If the players in nation are the same, make it alphabet.
+      $nameA = $cnames[strtoupper($a)] ?? $a;
+      $nameB = $cnames[strtoupper($b)] ?? $b;
+      $nameOrder = strcasecmp($nameA, $nameB);
+      return $nameOrder !== 0 ? $nameOrder : strcasecmp($a, $b);
+    });
     echo("<table>");
     foreach ($nc as $nk => $n) {
       if($nk == '!.gitignore') { 
