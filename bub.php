@@ -7,6 +7,7 @@
     t - background texture without .png (ground, sky... rnd)
   */
 
+  ob_start();
   include("func.php");
   addUbCounter();
     
@@ -107,6 +108,7 @@
     }
   }
 
+  ob_clean();
   header("Content-Type: image/png");
   imagepng($img);
   imagedestroy($tex);
