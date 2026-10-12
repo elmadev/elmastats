@@ -8,7 +8,7 @@
   uksort($teams, function ($a, $b) use ($teams) {
     $countOrder = $teams[$b] <=> $teams[$a];
     if ($countOrder !== 0) {
-      return $countOrder;
+    return $countOrder;
     }
 
     return strcasecmp($a, $b);
