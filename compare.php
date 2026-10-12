@@ -13,6 +13,10 @@
 
   echo("<b>Stats comparing</b><br/><br/>");
 
+  $sortedUsers = $users;
+    uasort($sortedUsers, function ($a, $b) {
+    return strcasecmp($a["nick"] ?? "", $b["nick"] ?? "");
+  });
   //"Pickboxes" XD
   echo("<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\"><tr><td><form action=\"compare.php\" method=\"get\">");
   $str = "";
@@ -24,7 +28,7 @@
       echo("<option value=\"\"></option>");
     }
     echo("<optgroup label=\"Players\">");
-    foreach ($users as $cItem) {
+    foreach ($sortedUsers as $cItem) {
       if ($cItem["nick"] == '!.gitignore' || $cItem["nick"] == '*') { continue; }
       if ($cItem["nick"] != "") {
         if ($cItem["nick"] == $dudes[$x]) {

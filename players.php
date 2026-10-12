@@ -8,7 +8,11 @@
   if ($type == 1) {
     echo("<tr><th width=\"200px\">Kuski</th><th>Registered</th></tr>");
   }
-  foreach ($users as $cItem) {
+  $sortedUsers = $users;
+  uasort($sortedUsers, function ($a, $b) {
+    return strcasecmp($a["nick"] ?? "", $b["nick"] ?? "");
+  });
+  foreach ($sortedUsers as $cItem) {
     if ($cItem["nick"] == '!.gitignore' || $cItem["nick"] == '*') { continue; }
     if ($cItem["nick"] != "") {
       $f = true;
