@@ -27,7 +27,8 @@ anyway heres some lists<br/><br/><br/>
   echo("<div class=\"lefty\">");
   echo("<div class=\"box2\">");
   echo("<b>Last improvements</b><br/><br/>");
-  $lines = file("newtajms2");
+$lines = is_readable("newtajms2") ? file("newtajms2") : [];
+if (!is_array($lines)) $lines = [];
   echo("<table>");
   echo("<tr><th width=\"160px\">Kuski</th><th width=\"32px\">Int</th><th width=\"170px\">Improvement</th><th>When</th></tr>");
   $xs = count($lines);
