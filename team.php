@@ -15,12 +15,15 @@
         if ($_GET["team"] != "") echo("<b>" . $_GET["team"] . "</b><br/><br/>");
       }
       //echo(flag($cItem["country"]) . " <a href=\"player.php?player=" . $cItem["nick"] . "\">" . $cItem["nick"] . "</a><br/>");
-      echo(man($cItem["nick"], false) . "<br/>");
       $dudes[$c] = $cItem["nick"];
       $c++;
     }
   }
-
+  natcasesort($dudes);
+  $dudes = array_values($dudes);
+  foreach ($dudes as $nick) {
+    echo(man($nick, false) . "<br/>");
+  }
   if ($nousers) {
     echo("<span style=\"color: #FF0000\">Team \"" . $_GET["team"] . "\" has no kuskis!</span><br/>");
     $eror = true;
@@ -60,7 +63,9 @@
         }
       }
       $teamtt += $trtajm;
-      $victories[$trman] += 1;
+      if ($trman >= 0) {
+        $victories[$trman] = ($victories[$trman] ?? 0) + 1;
+      }
       for ($y = 0;$y < $c;$y++) {
 
                 
@@ -74,10 +79,13 @@
         //Finally, we also style each time based on target-time colours.
 
         $bulle = ""; $bulle2 = "";
-        if ($trman == $y) { $bulle = "<span style=\"font-weight: bold\">"; $bulle2 = "</span>"; }
+        if ($trman == $y) { $bulle = "<span style=\"color: #00AA00\">"; $bulle2 = "</span>"; }
         if ($trtajm > $utimes[$y][$x+1][1]) { $wry = "-"; } else { $wry = "+"; }
         $diff2 = abs((int)$utimes[$y][$x+1][1]-(int)$trtajm);
-        $str = $wry . formatElmaTime($diff2) . " to " . $dudes[$trman] . "'s time";
+        $str = "";
+        if ($trman >= 0 && $y != $trman) {
+          $str = $wry . formatElmaTime($diff2) . " to " . $dudes[$trman] . "'s time";
+        }
         if ($y == $trman || $trman == -1) $str = "";
 
         echo("<td class=\"times\" title=\"" . $str . "\"><center>" . $bulle . sttime($dudes[$y], $x+1, $utimes[$y][$x+1][1], true, $trman == $y ? true : false, $t) . $bulle2 . "</center></td>");
@@ -125,10 +133,24 @@
     echo("</table><br/><br/>");
     echo("<b>Other stats</b><br/><br/>");
     echo("<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\">");
-    for ($x = 0;$x < $c;$x++) {
-      echo("<tr><td>" . man($dudes[$x]) . "&nbsp;</td>");
-      echo("<td>" . ($victories[$x]+0) . " victories</td></tr>");
+    for ($x = 0; $x < $c; $x++) {
+      if (!isset($victories[$x])) {
+        $victories[$x] = 0;
+      }
     }
+
+    uksort($victories, function ($a, $b) use ($victories, $dudes) {
+      $countOrder = $victories[$b] <=> $victories[$a];
+      if ($countOrder !== 0) {
+        return $countOrder;
+      }
+      return strcasecmp($dudes[$a], $dudes[$b]);
+    });
+    foreach ($victories as $x => $victoryCount) {
+      echo("<tr><td>" . man($dudes[$x]) . "&nbsp;</td>");
+      echo("<td>" . $victoryCount . " victories</td></tr>");
+    }
+    echo("<tr><td colspan=\"2\">&nbsp;</td></tr>");
     echo("<tr><td>Best TT&nbsp;</td><td>" . man($dudes[$ttrman]) . "</td></tr>");
     echo("</table>");
   }
