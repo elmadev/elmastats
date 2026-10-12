@@ -8,6 +8,7 @@
   //  c     text color
   //  x,y   x and y offset (resizes img also)
 
+  ob_start();
   include("func.php");
   addUbCounter();
   function html2rgb($color) {
@@ -29,17 +30,15 @@
     //kalkulate tt & avg
     $tt = 0;
     $avg = 0;
-    for ($x = 0;$x < 54;$x++) {
-      $cTime = $utimes[$x+1][1];
-      if ($cTime == 0) $cTime = 60000;
-      $tt += $cTime;
-      for ($y = 0;$y < 10;$y++) {
-        if ($utimes[$x+1][$y+1] == 0) {
-          $avg += 60000;
-        } else {
-          $avg += $utimes[$x+1][$y+1];
-        }
-      }
+for ($x = 0; $x < 54; $x++) {
+    $cTime = (int)($utimes[$x + 1][1] ?? 0);
+    if ($cTime === 0) $cTime = 60000;
+    $tt += $cTime;
+
+    for ($y = 0; $y < 10; $y++) {
+        $time = (int)($utimes[$x + 1][$y + 1] ?? 0);
+        $avg += ($time === 0) ? 60000 : $time;
+    }
     }
     $strtt = formatElmaTime($tt);
     $stravg = formatElmaTime(round($avg/10));
@@ -77,6 +76,7 @@
     $fontcolor = imagecolorallocate($img, 0, 0, 0);
   }
   imagestring($img, 2, 2+$border+$xp, $border+$yp, $s, $fontcolor);
+  ob_clean();
   header("Content-Type: image/png");
   imagepng($img);
   imagedestroy($img);
