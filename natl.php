@@ -168,6 +168,7 @@
     echo("</div>");
     echo("<div class=\"lefty\">");
     echo("<br/><b>National records</b><br/><br/>");
+    arsort($victories, SORT_NUMERIC);
     echo("<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\">");
     foreach ($victories as $man => $v) {
       echo("<tr><td>" . man($man) . "&nbsp;</td>");
