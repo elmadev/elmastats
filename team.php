@@ -88,7 +88,12 @@
         }
         if ($y == $trman || $trman == -1) $str = "";
 
-        echo("<td class=\"times\" title=\"" . $str . "\"><center>" . $bulle . sttime($dudes[$y], $x+1, $utimes[$y][$x+1][1], true, $trman == $y ? true : false, $t) . $bulle2 . "</center></td>");
+        $timeHtml = sttime($dudes[$y], $x+1, $utimes[$y][$x+1][1], true, $trman == $y ? true : false, $t);
+        if ($trman == $y) {
+          $timeHtml = str_replace("<a ", "<a style=\"color: #00FF00 !important\" ", $timeHtml);
+        }
+
+        echo("<td class=\"times\" title=\"" . $str . "\"><center>" . $bulle . $timeHtml . $bulle2 . "</center></td>");
       }
       echo("</tr>");
     }
