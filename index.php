@@ -66,18 +66,21 @@ if (!is_array($lines)) $lines = [];
   echo("<table>");
   echo("<tr><th width=\"160px\">Kuski</th><th width=\"32px\">TT</th><th>When</th></tr>");
   if ($lines) {
-    $xs = count($lines);
-    if ($xs > 30) $xs = 30;
-    $y=0;
-    for ($x = 0;$y < $xs;$x++) {
-      $data = parseLine(ld($lines[count($lines)-1-$x]));
-      if(man($data["nick"])!=$data["nick"]){
+    $lineCount = count($lines);
+    $shown = 0;
+
+    for ($x = 0; $x < $lineCount && $shown < 30; $x++) {
+      $data = parseLine(ld($lines[$lineCount - 1 - $x]));
+
+      if ($data["nick"] != "" &&
+          man($data["nick"]) != $data["nick"] &&
+          (int)$data["tt"] < 60) {
         echo("<tr>");
         echo("<td>" . man($data["nick"]) . "</td>");
         echo("<td>" . $data["tt"] . "</td>");
         echo("<td>" . date("d/m/y", ttime($data["time"])) . "</td>");
         echo("</tr>");
-        $y++;
+        $shown++;
       }
     }
   }
