@@ -1,34 +1,34 @@
 <?php ob_start(); include("top.php"); ?>
 <?php
-  if (isset($_SESSION["nick"]) && in_array($_SESSION["nick"], $admins, true)) {
+    if (isset($_SESSION["nick"]) && in_array($_SESSION["nick"], $admins, true)) {
     $admnick = $_GET["nick"] ?? "";
     $admnuser = $users[$admnick] ?? null;
-if (isset($_GET["recover_state"]) && $_GET["recover_state"] === "1") {
+    if (isset($_GET["recover_state"]) && $_GET["recover_state"] === "1") {
     if (!isset($admnuser)) {
-        ob_clean();
-        http_response_code(404);
-        exit("User not found.");
+      ob_clean();
+      http_response_code(404);
+      exit("User not found.");
     }
 
     $statePath = "statefilesz/" . $admnick . ".dat";
 
     if (!is_file($statePath)) {
-        ob_clean();
-        http_response_code(404);
-        exit("State.dat not found.");
+      ob_clean();
+      http_response_code(404);
+      exit("State.dat not found.");
     }
 
-    ob_clean();
-    header("Content-Type: application/octet-stream");
-    header("Content-Disposition: attachment; filename=\"" . basename($admnick) . ".dat\"");
-    header("Content-Length: " . filesize($statePath));
-    readfile($statePath);
+      ob_clean();
+      header("Content-Type: application/octet-stream");
+      header("Content-Disposition: attachment; filename=\"" . basename($admnick) . ".dat\"");
+      header("Content-Length: " . filesize($statePath));
+      readfile($statePath);
     exit;
 }
     $deleteMessage = "";
 
-if (isset($_POST["delete_account"])) {
-    $deleteNick = $_POST["delete_nick"] ?? "";
+    if (isset($_POST["delete_account"])) {
+      $deleteNick = $_POST["delete_nick"] ?? "";
 
     if ($deleteNick !== $admnick || !isset($users[$deleteNick])) {
         $deleteMessage = "Invalid account selection.";
@@ -55,9 +55,9 @@ if (isset($_POST["delete_account"])) {
 }
     $uploadMessage = "";
 
-if (isset($admnuser) && isset($_FILES["uploadedfile"])
-    && $_FILES["uploadedfile"]["error"] !== UPLOAD_ERR_NO_FILE) {
-    $file = $_FILES["uploadedfile"];
+    if (isset($admnuser) && isset($_FILES["uploadedfile"])
+        && $_FILES["uploadedfile"]["error"] !== UPLOAD_ERR_NO_FILE) {
+        $file = $_FILES["uploadedfile"];
 
     if ($file["error"] !== UPLOAD_ERR_OK) {
         $uploadMessage = "Upload failed.";
@@ -66,14 +66,14 @@ if (isset($admnuser) && isset($_FILES["uploadedfile"])
     } elseif ($file["size"] !== 67910) {
         $uploadMessage = "Wrong file size.";
     } else {
-$path = "statefilesz/" . $admnick . ".dat";
-$oldPath = "statefilesz/" . $admnick . "_old.dat";
-$hadOld = file_exists($path);
+        $path = "statefilesz/" . $admnick . ".dat";
+        $oldPath = "statefilesz/" . $admnick . "_old.dat";
+        $hadOld = file_exists($path);
 
-if ($hadOld && !copy($path, $oldPath)) {
-    $uploadMessage = "Could not back up the old stats file.";
-} elseif (move_uploaded_file($file["tmp_name"], $path)) {
-    chmod($path, 0644);
+    if ($hadOld && !copy($path, $oldPath)) {
+        $uploadMessage = "Could not back up the old stats file.";
+    } elseif (move_uploaded_file($file["tmp_name"], $path)) {
+        chmod($path, 0644);
 
     if ($hadOld) {
         $oldTimes = stateTimes($admnick . "_old", $admnuser["elmaname"]);
@@ -82,9 +82,9 @@ if ($hadOld && !copy($path, $oldPath)) {
         $newtt = 0;
         $improvementLog = "";
 
-for ($x = 0; $x < 54; $x++) {
-    $oldTime = (int)($oldTimes[$x + 1][1] ?? 0);
-    $newTime = (int)($newTimes[$x + 1][1] ?? 0);
+    for ($x = 0; $x < 54; $x++) {
+        $oldTime = (int)($oldTimes[$x + 1][1] ?? 0);
+        $newTime = (int)($newTimes[$x + 1][1] ?? 0);
 
     if ($oldTime > 0 && $newTime > 0 && $newTime < $oldTime) {
         $improvementLog .= $admnick . "|" . ($x + 1) . "|"
@@ -92,101 +92,94 @@ for ($x = 0; $x < 54; $x++) {
     }
 }
 
-if ($improvementLog !== "") {
-    file_put_contents("newtajms2", $improvementLog, FILE_APPEND | LOCK_EX);
+    if ($improvementLog !== "") {
+        file_put_contents("newtajms2", $improvementLog, FILE_APPEND | LOCK_EX);
 }
+    for ($x = 0; $x < 54; $x++) {
+        $oldTime = (int)($oldTimes[$x + 1][1] ?? 0);
+        $newTime = (int)($newTimes[$x + 1][1] ?? 0);
+        $oldtt += ($oldTime > 0) ? $oldTime : 60000;
+        $newtt += ($newTime > 0) ? $newTime : 60000;
+    }
+    if (floor($newtt / 6000) < floor($oldtt / 6000)) {
+        file_put_contents("newttz", $admnick . "|" . floor($newtt / 6000) . "|" . time() . "\n", FILE_APPEND | LOCK_EX);
+    }
+    if ($newtt < $oldtt && file_exists("statefileszh/" . $admnick)) {
+        $n = 0;
+        while (file_exists("historyz/" . $admnick . "_" . $n)) {
+            $n++;
+    }
 
-if (floor($newtt / 6000) < floor($oldtt / 6000)) {
-    file_put_contents(
-        "newttz",
-        $admnick . "|" . floor($newtt / 6000) . "|" . time() . "\n",
-        FILE_APPEND | LOCK_EX
-    );
-}
-
-        for ($x = 0; $x < 54; $x++) {
-            $oldTime = (int)($oldTimes[$x + 1][1] ?? 0);
-            $newTime = (int)($newTimes[$x + 1][1] ?? 0);
-            $oldtt += ($oldTime > 0) ? $oldTime : 60000;
-            $newtt += ($newTime > 0) ? $newTime : 60000;
-        }
-
-        if ($newtt < $oldtt && file_exists("statefileszh/" . $admnick)) {
-            $n = 0;
-            while (file_exists("historyz/" . $admnick . "_" . $n)) {
-                $n++;
-            }
-
-            if (copy("statefileszh/" . $admnick, "historyz/" . $admnick . "_" . $n)) {
-                file_put_contents("historyz/" . $admnick . "_" . $n, time() . "\n", FILE_APPEND);
-            }
-        }
-
-        if (file_exists($oldPath)) {
-            unlink($oldPath);
+    if (copy("statefileszh/" . $admnick, "historyz/" . $admnick . "_" . $n)) {
+        file_put_contents("historyz/" . $admnick . "_" . $n, time() . "\n", FILE_APPEND);
         }
     }
 
-    $uploadMessage = "Stats uploaded for " . $admnick . ".";
-} else {
-    $uploadMessage = "Error uploading the file!";
+    if (file_exists($oldPath)) {
+        unlink($oldPath);
+    }
 }
+
+        $uploadMessage = "Stats uploaded for " . $admnick . ".";
+    } else {
+        $uploadMessage = "Error uploading the file!";
+    }
     }
 }
 ?>
 <?php
     if (isset($admnuser)) {
 ?>
-<div class="lefty">
-<b>Upload stats</b><br/>
-<form enctype="multipart/form-data"
+    <div class="lefty">
+    <b>Upload stats</b><br/>
+    <form enctype="multipart/form-data"
       action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"], ENT_QUOTES, "UTF-8"); ?>?nick=<?php echo rawurlencode($admnick); ?>"
       method="post">
-  <input type="hidden" name="MAX_FILE_SIZE" value="3000000"/>
-  <table border="0" cellpadding="0" cellspacing="2">
+    <input type="hidden" name="MAX_FILE_SIZE" value="3000000"/>
+    <table border="0" cellpadding="0" cellspacing="2">
     <tr>
       <td>State file (*.dat):&nbsp;</td>
       <td><input name="uploadedfile" type="file" accept=".dat"/></td>
       <td style="text-align: left; padding-left: 0;">
-<input type="submit" value="Upload" style="position: relative; left: -30px;"/>
-      </td>
+    <input type="submit" value="Upload" style="position: relative; left: -30px;"/>
+    </td>
     </tr>
-  </table>
-</form>
-<br/><br/>
+    </table>
+    </form>
+    <br/><br/>
 <?php if ($uploadMessage !== "") echo("<br/>" . htmlspecialchars($uploadMessage, ENT_QUOTES, "UTF-8") . "<br/>"); ?>
-<br/>
-<table border="0" cellpadding="0" cellspacing="0">
-<tr>
-<td valign="top">
-<b>Admin - Account settings: <?php echo $admnick; ?></b><br/><br/>
-<form enctype="multipart/form-data" action="<?php echo($_SERVER["PHP_SELF"]); ?>?nick=<?php echo($admnick); ?>" method="post" autocomplete="off">
-  <input type="hidden" name="OGnick" value="<?php echo($admnick); ?>" />
-  <table border="0" cellpadding="0" cellspacing="2">
-<tr>
-  <td>Nick:&nbsp;</td>
-  <td>
+    <br/>
+    <table border="0" cellpadding="0" cellspacing="0">
+    <tr>
+    <td valign="top">
+    <b>Admin - Account settings: <?php echo $admnick; ?></b><br/><br/>
+    <form enctype="multipart/form-data" action="<?php echo($_SERVER["PHP_SELF"]); ?>?nick=<?php echo($admnick); ?>" method="post" autocomplete="off">
+    <input type="hidden" name="OGnick" value="<?php echo($admnick); ?>" />
+    <table border="0" cellpadding="0" cellspacing="2">
+    <tr>
+      <td>Nick:&nbsp;</td>
+    <td>
     <div style="display: flex; gap: 4px; width: 176px;">
-      <input type="text"
-        style="width: 86px; box-sizing: border-box;"
-        value="<?php echo htmlspecialchars($admnick, ENT_QUOTES, 'UTF-8'); ?>"
-        disabled="disabled"/>
+    <input type="text"
+      style="width: 86px; box-sizing: border-box;"
+      value="<?php echo htmlspecialchars($admnick, ENT_QUOTES, 'UTF-8'); ?>"
+      disabled="disabled"/>
 
-      <select style="width: 86px; box-sizing: border-box;"
-        onchange="if (this.value) location.href='adm.php?nick=' + encodeURIComponent(this.value)">
-        <?php
-          foreach ($users as $user) {
-            if (empty($user["nick"])) continue;
-            $nick = $user["nick"];
-            $safeNick = htmlspecialchars($nick, ENT_QUOTES, "UTF-8");
-            $selected = ($nick === $admnick) ? ' selected="selected"' : '';
-            echo('<option value="' . $safeNick . '"' . $selected . '>' . $safeNick . '</option>');
-          }
+    <select style="width: 86px; box-sizing: border-box;"
+      onchange="if (this.value) location.href='adm.php?nick=' + encodeURIComponent(this.value)">
+      <?php
+        foreach ($users as $user) {
+        if (empty($user["nick"])) continue;
+        $nick = $user["nick"];
+        $safeNick = htmlspecialchars($nick, ENT_QUOTES, "UTF-8");
+        $selected = ($nick === $admnick) ? ' selected="selected"' : '';
+        echo('<option value="' . $safeNick . '"' . $selected . '>' . $safeNick . '</option>');
+        }
         ?>
-      </select>
+    </select>
     </div>
-  </td>
-</tr>
+    </td>
+    </tr>
     <tr>
       <td>State.dat name:&nbsp;</td>
       <td><input type="text" name="elmaname" style="width: 170px" value="<?php echo($admnuser["elmaname"]); ?>"/></td>
@@ -239,51 +232,51 @@ if (floor($newtt / 6000) < floor($oldtt / 6000)) {
       <td><input type="text" name="timeformat" style="width: 170px" value="<?php echo($admnuser["timeformat"]); ?>"/></td>
     </tr>
     <tr><th colspan="2">&nbsp;</th></tr>
-<tr>
-  <td colspan="2"><center><input type="submit" value="Update"/></center></td>
-</tr>
-<tr><td colspan="2">&nbsp;</td></tr>
+    <tr>
+      <td colspan="2"><center><input type="submit" value="Update"/></center></td>
+    </tr>
+    <tr><td colspan="2">&nbsp;</td></tr>
 
 <?php if ($deleteMessage === "") { ?>
-<tr><td colspan="2">&nbsp;</td></tr>
+        <tr><td colspan="2">&nbsp;</td></tr>
 <?php } else { ?>
-<tr>
-  <td colspan="2" style="text-align: center;">
+    <tr>
+      <td colspan="2" style="text-align: center;">
     <span style="position: relative; left: 200px;">
       <?php echo htmlspecialchars($deleteMessage, ENT_QUOTES, "UTF-8"); ?>
     </span>
-  </td>
-</tr>
+      </td>
+    </tr>
 <?php } ?>
-  </table>
-</form>
-</td>
-<td valign="top" width="220" style="padding-left: 70px;">
-  <b>Other stuff</b><br/><br/>
-<form method="post"
+    </table>
+    </form>
+    </td>
+    <td valign="top" width="220" style="padding-left: 70px;">
+      <b>Other stuff</b><br/><br/>
+    <form method="post"
       onsubmit="return confirm('Are u sure? This will delete the user.');">
-  <input type="hidden" name="delete_nick"
-         value="<?php echo htmlspecialchars($admnick, ENT_QUOTES, 'UTF-8'); ?>">
-<button type="submit" name="delete_account"
-        style="color: #3675c5; background: none; border: 0; padding: 0; cursor: pointer; font: inherit;">
+    <input type="hidden" name="delete_nick"
+      value="<?php echo htmlspecialchars($admnick, ENT_QUOTES, 'UTF-8'); ?>">
+    <button type="submit" name="delete_account"
+      style="color: #3675c5; background: none; border: 0; padding: 0; cursor: pointer; font: inherit;">
   Delete account
-</button>
-</form>
-<a href="adm.php?nick=<?php echo rawurlencode($admnick); ?>&recover_state=1"
-   style="color: #3675c5;">Recover state.dat</a><br/>
-</td>
-</tr>
-</table>
+    </button>
+    </form>
+    <a href="adm.php?nick=<?php echo rawurlencode($admnick); ?>&recover_state=1"
+      style="color: #3675c5;">Recover state.dat</a><br/>
+    </td>
+    </tr>
+    </table>
 <?php
-  echo($adm_acc_status);
+    echo($adm_acc_status);
 ?>
 </div>
 <?php
     } else {
       echo("<span style=\"color: #FF0000\">User don't exist!</span><br/>");
     }
-  } else {
-    echo("<span style=\"color: #FF0000\">You are nat admin!</span><br/>");
-  }
+    } else {
+      echo("<span style=\"color: #FF0000\">You are nat admin!</span><br/>");
+    }
 ?>
 <?php include("tpo.php"); ?>
