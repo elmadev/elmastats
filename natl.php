@@ -133,6 +133,7 @@
     $topnum = $_GET["top"];
     if ($topnum == 0) $topnum = 10;
     $victories = array();
+    $besttt = 0;
     echo("<b>Top " . $topnum . "s for all internals</b><br/><br/>");
     echo("<div class=\"lefty\">");
     for ($x = 0;$x < 54;$x++) {
@@ -144,6 +145,7 @@
         if ($cItem["time"] < 60000) $top[] = $cItem;
       }
       usort($top, "cmp");
+      $besttt += isset($top[0]["time"]) ? (int)$top[0]["time"] : 60000;
       echo("<table class=\"times\">");
       echo("<tr><th class=\"times\" width=\"20px\">" . ($x+1) . ".</th>");
       echo("<th class=\"times\" width=\"180px\">" . internal($x+1) . "</th>");
@@ -174,7 +176,11 @@
       echo("<tr><td>" . man($man) . "&nbsp;</td>");
       echo("<td>" . $v . " records</td></tr>");
     }
-    echo("</table>");
+    echo("<br/>");
+      echo("<tr><td colspan=\"2\">&nbsp;</td></tr>");
+      echo("<tr><td><b>National TT:</b>&nbsp;</td>");
+      echo("<td><b>" . coloredtttime($besttt, true) . "</b></td></tr>");
+      echo("</table>");
     echo("</div>");
   }
 ?>
