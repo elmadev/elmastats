@@ -173,14 +173,13 @@
     arsort($victories, SORT_NUMERIC);
     echo("<table border=\"0\" cellpadding=\"0\" cellspacing=\"0\">");
     foreach ($victories as $man => $v) {
-      echo("<tr><td>" . man($man) . "&nbsp;</td>");
-      echo("<td>" . $v . " records</td></tr>");
+    echo("<tr><td>" . man($man) . "&nbsp;</td>");
+    echo("<td>" . $v . " records</td></tr>");
     }
-    echo("<br/>");
-      echo("<tr><td colspan=\"2\">&nbsp;</td></tr>");
-      echo("<tr><td><b>National TT:</b>&nbsp;</td>");
-      echo("<td><b>" . coloredtttime($besttt, true) . "</b></td></tr>");
-      echo("</table>");
+    echo("<tr><td colspan=\"2\">&nbsp;</td></tr>");
+    echo("<tr><td><b>National TT:</b>&nbsp;</td>");
+    echo("<td>" . coloredtttime($besttt, true) . "</td></tr>");
+    echo("</table>");
     echo("</div>");
   }
 ?>
