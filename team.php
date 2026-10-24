@@ -103,7 +103,11 @@
       }
       echo("</tr>");
     }
-
+    echo("<tr>");
+    for ($column = 0; $column < $c + 1; $column++) {
+    echo("<th class=\"times\"></th>");
+    }
+    echo("</tr>");
     echo("<tr><td class=\"times\">Total Time</td>");
     $ttrman = 0;
     $tts = array();
