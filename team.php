@@ -9,6 +9,9 @@
     $eror = true;
   }
   foreach ($users as $cItem) {
+    if (empty($cItem["nick"]) || $cItem["nick"] === '!.gitignore' || $cItem["nick"] === '*') {
+      continue;
+    }
     if ($cItem["team"] == $_GET["team"]) {
       if ($nousers) {
         $nousers = false;
@@ -38,7 +41,7 @@
     echo("<table class=\"times\" cellpadding=\"2\">");
     echo("<tr><th class=\"times\" width=\"180px\">Level</th>");
 
-    for ($y = 0;$y < $c;$y++) {
+    for ($y = 0; $y < $c; $y++) {
       echo("<th class=\"times\" width=\"81px\"><center><a href=\"player.php?player=" . $dudes[$y] . "\">" . $dudes[$y] . "</a></center></th>");
     }
 
@@ -81,14 +84,17 @@
         $bulle = ""; $bulle2 = "";
         if ($trman == $y) { $bulle = "<span style=\"color: #00AA00\">"; $bulle2 = "</span>"; }
         if ($trtajm > $utimes[$y][$x+1][1]) { $wry = "-"; } else { $wry = "+"; }
-        $diff2 = abs((int)$utimes[$y][$x+1][1]-(int)$trtajm);
-        $str = "";
+          $diff2 = abs((int)$utimes[$y][$x+1][1]-(int)$trtajm);
+          $str = "";
         if ($trman >= 0 && $y != $trman) {
           $str = $wry . formatElmaTime($diff2) . " to " . $dudes[$trman] . "'s time";
         }
         if ($y == $trman || $trman == -1) $str = "";
 
-        $timeHtml = sttime($dudes[$y], $x+1, $utimes[$y][$x+1][1], true, $trman == $y ? true : false, $t);
+          $playerTime = (int)($utimes[$y][$x + 1][1] ?? 0);
+          $timeHtml = ($playerTime <= 0)
+          ? ""
+          : sttime($dudes[$y], $x + 1, $playerTime, true, $trman == $y, $t);
         if ($trman == $y) {
           $timeHtml = str_replace("<a ", "<a style=\"color: #00FF00 !important\" ", $timeHtml);
         }
@@ -97,26 +103,25 @@
       }
       echo("</tr>");
     }
-
+    echo("<tr>");
+    for ($column = 0; $column < $c + 1; $column++) {
+    echo("<th class=\"times\"></th>");
+    }
+    echo("</tr>");
     echo("<tr><td class=\"times\">Total Time</td>");
     $ttrman = 0;
     $tts = array();
     for ($y = 0;$y < $c;$y++) {
       $tt = 0;
       for ($x = 0;$x < 54;$x++) {
-        if ($utimes[$y][$x+1][1] == 0) {
-          $tt += 60000;
-        } else {
-          $tt += (int)$utimes[$y][$x+1][1];
-        }
+      $time = (int)($utimes[$y][$x + 1][1] ?? 0);
+      $tt += ($time > 0) ? $time : 60000;
       }
       $tts[$y] = $tt;
       if ($tts[$y] < $tts[$ttrman]) $ttrman = $y;
     }
     for ($y = 0;$y < $c;$y++) {
-      $bulle = ""; $bulle2 = "";
-      if ($ttrman == $y) { $bulle = "<span style=\"color: #00AA00\">"; $bulle2 = "</span>"; }
-      echo("<td class=\"times\"><center>" . $bulle . coloredtttime($tts[$y], true) . $bulle2 . "</center></td>");
+    echo("<td class=\"times\"><center>" . coloredtttime($tts[$y], true) . "</center></td>");
     }
 
     /*$wrtt = 0;
@@ -156,7 +161,7 @@
       echo("<td>" . $victoryCount . " victories</td></tr>");
     }
     echo("<tr><td colspan=\"2\">&nbsp;</td></tr>");
-    echo("<tr><td>Best TT&nbsp;</td><td>" . man($dudes[$ttrman]) . "</td></tr>");
+    echo("<tr><td><b>Best TT</b>&nbsp;</td><td>" . man($dudes[$ttrman]) . "</td></tr>");
     echo("</table>");
   }
 ?>
