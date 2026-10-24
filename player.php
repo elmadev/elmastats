@@ -154,6 +154,11 @@
       $TTandAvgDiff = $avgtt - $tt;
       $sumofdiff = $tt - $ttIfBeatTargets;
 
+      echo("<tr>");
+      for ($column = 0; $column < 8; $column++) {
+      echo("<th class=\"times\"></th>");
+      }
+      echo("</tr>");
       echo("<tr><td class=\"times\">Total time</td>");
       echo("<td class=\"times\"><center>" . coloredtttime($tt, true) . "</center></td>");
       echo("<td class=\"times\"></td>"); // Spacer
@@ -217,6 +222,11 @@
         //echo("<td class=\"times\"><center>" . formatElmaTime(round($avg/10), true) . "</center></td>");
         echo("</tr>");
       }
+      echo("<tr>");
+      for ($column = 0; $column < 12; $column++) {
+      echo("<th class=\"times\"></th>");
+      }
+      echo("</tr>");
       echo("<tr><td class=\"times\">TT</td>");
       echo("<td class=\"times\" colspan=\"10\"><center>" . coloredtttime($tt, true) . "</center></td>");
       echo("<td class=\"times\"><center>" . coloredtttime($avgtt, true) . "</center></td>");
