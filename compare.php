@@ -129,7 +129,11 @@
     }
     echo("</tr>");
     }
-
+    echo("<tr>");
+    for ($column = 0; $column < 1 + $c + ($c == 2 ? 1 : 0); $column++) {
+    echo("<th class=\"times\"></th>");
+    }
+    echo("</tr>");
     echo("<tr><td class=\"times\">Total Time</td>");
     $ttrman = 0;
     $tts = array();
