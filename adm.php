@@ -55,6 +55,117 @@
 }
     $uploadMessage = "";
 
+$recUploadMessages = array();
+
+if (isset($admnuser) && isset($_FILES["uploadedrec"])
+    && $_FILES["uploadedrec"]["error"] !== UPLOAD_ERR_NO_FILE) {
+    $file = $_FILES["uploadedrec"];
+    $extension = strtolower(pathinfo($file["name"], PATHINFO_EXTENSION));
+
+    if ($file["error"] !== UPLOAD_ERR_OK) {
+        $recUploadMessages[] = "Replay upload failed.";
+    } elseif ($extension !== "rec" && $extension !== "zip") {
+        $recUploadMessages[] = "Wrong replay filetype! Use .rec or .zip.";
+    } else {
+        $recDir = "recs/" . $admnick;
+        $targetElmaname = $admnuser["elmaname"] ?? "";
+        $saveAdminRec = function ($sourcePath, $sourceName, $isUploadedFile)
+            use ($admnick, $recDir, $targetElmaname, &$recUploadMessages) {
+            if (!is_file($sourcePath) || filesize($sourcePath) <= 0) {
+                $recUploadMessages[] = basename($sourceName) . ": file is empty.";
+                return;
+            }
+
+            $cInfo = recInfo($sourcePath);
+            $levelName = $cInfo["lev"] ?? "";
+
+            if (strpos($levelName, "QWQUU0") !== 0) {
+                $recUploadMessages[] = basename($sourceName) . ": unknown level.";
+                return;
+            }
+
+            $int = substr($cInfo["lev"], 6, 2);
+            if (!ctype_digit($int) || (int)$int < 1 || (int)$int > 54) {
+                $recUploadMessages[] = basename($sourceName) . ": invalid level.";
+                return;
+            }
+            $levelNumber = (int)$int;
+            $userTimes = stateTimes($admnick, $targetElmaname);
+            $hasMatchingTime = false;
+
+            foreach (($userTimes[$levelNumber] ?? array()) as $stateTime) {
+                if ((int)$stateTime > 0
+                    && formatRecTime((int)$stateTime) === formatRecTime((int)$cInfo["time"])) {
+                    $hasMatchingTime = true;
+                    break;
+                }
+            }
+
+            if (!$hasMatchingTime) {
+                $recUploadMessages[] = basename($sourceName)
+                    . ": no matching time found in the user's state file.";
+                return;
+            }
+
+            if (!is_dir($recDir) && !mkdir($recDir, 0755, true)) {
+                $recUploadMessages[] = "Could not create the user's replay folder.";
+                return;
+            }
+
+            $path = $recDir . "/" . $int . $admnick
+                . formatRecTime($cInfo["time"]) . ".rec";
+
+            $moved = $isUploadedFile
+                ? move_uploaded_file($sourcePath, $path)
+                : rename($sourcePath, $path);
+
+            if ($moved) {
+                $recUploadMessages[] = basename($sourceName)
+                    . " uploaded. Time: " . formatElmaTime($cInfo["time"]);
+            } else {
+                $recUploadMessages[] = basename($sourceName)
+                    . ": error saving the replay.";
+            }
+        };
+
+        if ($extension === "rec") {
+            $saveAdminRec($file["tmp_name"], $file["name"], true);
+        } else {
+            $tmpDir = "tmpadminrec" . bin2hex(random_bytes(5));
+
+            if (!mkdir($tmpDir, 0755)) {
+                $recUploadMessages[] = "Could not create a temporary folder.";
+            } else {
+                require_once("pclzip.lib.php");
+                $archive = new PclZip($file["tmp_name"]);
+                $result = $archive->extract(PCLZIP_OPT_PATH, $tmpDir);
+
+                if ($result == 0) {
+                    $recUploadMessages[] = "Error extracting the ZIP file.";
+                } else {
+                    foreach (scandir($tmpDir) as $zipEntry) {
+                        if ($zipEntry === "." || $zipEntry === ".."
+                            || strtolower(pathinfo($zipEntry, PATHINFO_EXTENSION)) !== "rec") {
+                            continue;
+                        }
+
+                        $recPath = $tmpDir . "/" . $zipEntry;
+                        if (is_file($recPath)) {
+                            $saveAdminRec($recPath, $zipEntry, false);
+                        }
+                    }
+                }
+
+                xrmdir($tmpDir);
+            }
+
+            if (count($recUploadMessages) === 0) {
+                $recUploadMessages[] = "No valid replay files found in the ZIP.";
+            }
+        }
+    }
+}
+
     if (isset($admnuser) && isset($_FILES["uploadedfile"])
         && $_FILES["uploadedfile"]["error"] !== UPLOAD_ERR_NO_FILE) {
         $file = $_FILES["uploadedfile"];
@@ -141,11 +252,31 @@
       <td>State file (*.dat):&nbsp;</td>
       <td><input name="uploadedfile" type="file" accept=".dat"/></td>
       <td style="text-align: left; padding-left: 0;">
-    <input type="submit" value="Upload" style="position: relative; left: -28px;"/>
+    <input type="submit" value="Upload" style="position: relative; left: -10px;"/>
     </td>
     </tr>
     </table>
     </form>
+    <br/><br/>
+    <b>Upload replays</b><br/>
+    <form enctype="multipart/form-data"
+      action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"], ENT_QUOTES, "UTF-8"); ?>?nick=<?php echo rawurlencode($admnick); ?>"
+      method="post">
+      <input type="hidden" name="MAX_FILE_SIZE" value="3000000"/>
+      <table border="0" cellpadding="0" cellspacing="2">
+        <tr>
+          <td>Replay file (.rec or .zip):&nbsp;</td>
+          <td><input name="uploadedrec" type="file" accept=".rec,.zip"/></td>
+          <td><input type="submit" value="Upload" style="position: relative; left: -63px;"/></td>
+        </tr>
+      </table>
+    </form>
+
+    <?php
+    foreach ($recUploadMessages as $message) {
+    echo("<div>" . htmlspecialchars($message, ENT_QUOTES, "UTF-8") . "</div>");
+    }
+    ?>
     <br/><br/>
 <?php if ($uploadMessage !== "") echo("<br/>" . htmlspecialchars($uploadMessage, ENT_QUOTES, "UTF-8") . "<br/>"); ?>
     <br/>
@@ -256,7 +387,7 @@
     </table>
     </form>
     </td>
-    <td valign="top" width="220" style="padding-left: 70px;">
+    <td valign="top" width="220" style="padding-left: 84px;">
       <b>Other stuff</b><br/><br/>
     <form method="post"
       onsubmit="return confirm('Are u sure? This will delete the user.');">
