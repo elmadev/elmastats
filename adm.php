@@ -257,6 +257,11 @@ if (isset($admnuser) && isset($_FILES["uploadedrec"])
     </tr>
     </table>
     </form>
+<?php
+    if ($uploadMessage !== "") {
+      echo("<br/>" . htmlspecialchars($uploadMessage, ENT_QUOTES, "UTF-8") . "<br/>");
+    }
+?>
     <br/><br/>
     <b>Upload replays</b><br/>
     <form enctype="multipart/form-data"
@@ -271,15 +276,12 @@ if (isset($admnuser) && isset($_FILES["uploadedrec"])
         </tr>
       </table>
     </form>
-
-    <?php
+<?php
     foreach ($recUploadMessages as $message) {
-    echo("<div>" . htmlspecialchars($message, ENT_QUOTES, "UTF-8") . "</div>");
+      echo("<br/>" . htmlspecialchars($message, ENT_QUOTES, "UTF-8") . "<br/>");
     }
-    ?>
+?>
     <br/><br/>
-<?php if ($uploadMessage !== "") echo("<br/>" . htmlspecialchars($uploadMessage, ENT_QUOTES, "UTF-8") . "<br/>"); ?>
-    <br/>
     <table border="0" cellpadding="0" cellspacing="0">
     <tr>
     <td valign="top">
